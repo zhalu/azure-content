@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="article-title" 
-   description="Article description that will be displayed on landing pages and in some search results" 
+   pageTitle="Select an Authentication Protocol" 
+   description="How to select an authentication protocol for an Azure data service" 
    services="service-name" 
    documentationCenter="dev-center-name" 
    authors="kevinscharpenberg" 
@@ -16,96 +16,61 @@
    ms.date="01/29/2015"
    ms.author="kevsch"/>
 
-# Markdown Template (Article Title) 
+Create an application and market it to a wide and growing consumer base on the Marketplace. Whether or not your application consumes Marketplace data, you can be a member of the community that leverages the Marketplace to sell your applications. The Marketplace does the provisioning and billing, leaving you to reap the rewards. If your application consumes Marketplace data, the user must be authenticated and authorized to access the datasets.
 
-To copy the markdown from this template, copy the article in your local repo, or click the Raw button in the GitHub UI and copy the markdown.
-
-  ![][8]
-
-Intro paragraph: Lorem dolor amet, adipiscing elit. Phasellus interdum nulla risus, lacinia porta nisl imperdiet sed. Mauris dolor mauris, tempus sed lacinia nec, euismod non felis. Nunc semper porta ultrices. Maecenas neque nulla, condimentum vitae ipsum sit amet, dignissim aliquet nisi.
-
-## Subheading 1
-
-Aenean sit amet leo nec purus placerat fermentum ac gravida odio. Aenean tellus lectus, faucibus in rhoncus in, faucibus sed urna.  volutpat mi id purus ultrices iaculis nec non neque. <a href="http://msdn.microsoft.com/library/azure" target="_blank">Link text for link outside of azure.microsoft.com</a>. Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris.
-
-> [AZURE.NOTE] Indented note text.  The word 'note' will be added during publication. Ut eu pretium lacus. Nullam purus est, iaculis sed est vel, euismod vehicula odio. Curabitur lacinia, erat tristique iaculis rutrum, erat sem sodales nisi, eu condimentum turpis nisi a purus.
-
-1. Aenean sit amet leo nec **Purus** placerat fermentum ac gravida odio. 
-
-2. Aenean tellus lectus, faucibus in **Rhoncus** in, faucibus sed urna. Suspendisse volutpat mi id purus ultrices iaculis nec non neque.
- 
-  	![][5]
-
-3. Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris. Sed dolor dui, condimentum et varius a, vehicula at nisl. 
-
-  	![][6]
-
-
-Suspendisse volutpat mi id purus ultrices iaculis nec non neque. Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris. Otrus informatus: [Link 1 to another azure.microsoft.com documentation topic]
-
-## Subheading 2
-
-Ut eu pretium lacus. Nullam purus est, iaculis sed est vel, euismod vehicula odio.   
-
-1. Curabitur lacinia, erat tristique iaculis rutrum, erat sem sodales nisi, eu condimentum turpis nisi a purus. 
-
-        - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:
-        (NSDictionary *)launchOptions
-        {
-            // Register for remote notifications
-            [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
-            UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound];
-            return YES;
-        }   	 
-
-2. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. 
-
-   	    // Because toast alerts don't work when the app is running, the app handles them.
-        // This uses the userInfo in the payload to display a UIAlertView.
-        - (void)application:(UIApplication *)application didReceiveRemoteNotification:
-        (NSDictionary *)userInfo {
-            NSLog(@"%@", userInfo);
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Notification" message:
-            [userInfo objectForKey:@"inAppMessage"] delegate:nil cancelButtonTitle:
-            @"OK" otherButtonTitles:nil, nil];
-            [alert show];
-        }
-
-
-    > [AZURE.NOTE] Duis sed diam non <i>nisl molestie</i> pharetra eget a est. [Link 2 to another azure.microsoft.com documentation topic]
-
-
-Quisque commodo eros vel lectus euismod auctor eget sit amet leo. Proin faucibus suscipit tellus dignissim ultrices.
-
-## Subheading 3
- 
-1. Maecenas sed condimentum nisi. Suspendisse potenti. 
-
-  + Fusce
-  + Malesuada
-  + Sem
-
-2. Nullam in massa eu tellus tempus hendrerit.
-
-  	![][7]
-
-3. Quisque felis enim, fermentum ut aliquam nec, pellentesque pulvinar magna.
-
+The Windows Azure Marketplace (WAM) supports two authentication protocols, HTTP Basic Authentication and OAuth. Deciding which protocol to use is a matter of determining who uses your application and how it is used.
  
 
+## Select anNP Authentication Protocol
 
-<!--Every topic should have next steps and links to the next logical set of content to keep the customer engaged-->
-## Next steps
+Both HTTP Basic Authentication and OAuth authentication are able authenticate a user and, as appropriate, either grant or deny access to a protected resource. 
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ultricies, ipsum vitae volutpat hendrerit, purus diam pretium eros, vitae tincidunt nulla lorem sed turpis: [Link 3 to another azure.microsoft.com documentation topic]. 
+If you answer these questions for your application, you can determine which is better to use:
 
-<!--Image references-->
-[5]: ./media/markdown-template-for-new-articles/octocats.png
-[6]: ./media/markdown-template-for-new-articles/pretty49.png
-[7]: ./media/markdown-template-for-new-articles/channel-9.png
-[8]: ./media/markdown-template-for-new-articles/copytemplate.png
+  * Will I sell this application on the Marketplace?
 
-<!--Link references-->
-[Link 1 to another azure.microsoft.com documentation topic]: ../virtual-machines-windows-tutorial/
-[Link 2 to another azure.microsoft.com documentation topic]: ../web-sites-custom-domain-name/
-[Link 3 to another azure.microsoft.com documentation topic]: ../storage-whatis-account/
+  * Will the user access one or more Marketplace datasets?
+
+If you answered “Yes” to either or both of these questions, OAuth is the required authentication protocol.
+
+## HTTP Basic Authentication
+The Marketplace implementation of HTTP Basic Authentication ignores the user id and only requires that a valid secret account key as a password. You can ignore the user id, or if you want to manage usage and billing on your own, you can use it to identify specific users. If your application uses HTTP Basic Authentication protocol to access the Marketplace:
+
+  * All access is through a single account. 
+
+  * All users share and use a single password (the Marketplace account key). 
+Whether the account key is included in the code or entered by the user, the account key less private and secret. Thus it can introduce vulnerabilities to abuse.
+
+  * The Marketplace bills all access to a single account – the owner of the account key – probably you.
+
+  * Removing access for one user (by changing the account key) removes access for all users.
+
+  * Only datasets subscribed to by the account key owner are available to users.
+
+  * If you want individual users to pay for their usage you must manage their individual use and bill them.
+
+
+**See Implement HTTP Basic Auth in your Marketplace App.**
+
+## OAuth
+The Marketplace implementation of OAuth leverages the user’s Windows Live ID and password and the application’s registration key (client_id) to authenticate and grant access to datasets. Using OAuth provides some additional security benefits, such as the ability to authenticate the client and user and issue an access token directly to the client without potentially exposing it to others, including the resource owner. 
+
+If your application uses the OAuth protocol to access the Marketplace:
+
+  * The application must be registered with the Marketplace.
+
+  * Each user must have a Windows Live ID.
+
+  * All access is through the user’s individual account. 
+
+  * Billing is to the individual user’s account.
+
+  * Removing access for one user does not affect any other user.
+ 
+  * Any dataset subscribed to by the user is accessible (if the application supports this scenario).
+ 
+  * The Marketplace manages the user’s account and billing.
+
+**See Implement OAuth in your Marketplace App.**
+
+Given the above it is reasonable to ask, “Why would anyone use HTTP Basic Authentication?” There are two reasons: 1) the code required to implement HTTP Basic Authentication is shorter and simpler than the code to implement OAuth, and 2) if you are the only one that is going to use the application, you don’t need the flexibility and complexity of OAuth.
