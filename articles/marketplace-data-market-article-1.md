@@ -13,7 +13,7 @@
    ms.topic="article"
    ms.tgt_pltfrm="may be required"
    ms.workload="required" 
-   ms.date="mm/dd/yyyy"
+   ms.date="01/29/2015"
    ms.author="kevsch"/>
 
 # Markdown Template (Article Title) 
