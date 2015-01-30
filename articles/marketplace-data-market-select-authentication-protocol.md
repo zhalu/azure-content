@@ -50,7 +50,7 @@ Whether the account key is included in the code or entered by the user, the acco
   * If you want individual users to pay for their usage you must manage their individual use and bill them.
 
 
-For more information, see [Implement HTTP Basic Auth in your Marketplace App](../marketplace-data-market-article-2.md/).
+For more information, see [Implement HTTP Basic Auth in your Marketplace App](./marketplace-data-market-article-2.md/).
 
 ## OAuth
 The Marketplace implementation of OAuth leverages the user’s Windows Live ID and password and the application’s registration key (client_id) to authenticate and grant access to datasets. Using OAuth provides some additional security benefits, such as the ability to authenticate the client and user and issue an access token directly to the client without potentially exposing it to others, including the resource owner. 
