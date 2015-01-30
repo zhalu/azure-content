@@ -16,6 +16,8 @@
    ms.date="01/29/2015"
    ms.author="kevsch"/>
 
+#How to select an authentication protocol for an Azure data service
+
 Create an application and market it to a wide and growing consumer base on the Marketplace. Whether or not your application consumes Marketplace data, you can be a member of the community that leverages the Marketplace to sell your applications. The Marketplace does the provisioning and billing, leaving you to reap the rewards. If your application consumes Marketplace data, the user must be authenticated and authorized to access the datasets.
 
 The Windows Azure Marketplace (WAM) supports two authentication protocols, HTTP Basic Authentication and OAuth. Deciding which protocol to use is a matter of determining who uses your application and how it is used.
