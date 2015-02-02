@@ -1,18 +1,18 @@
 <properties 
    pageTitle="Select an Authentication Protocol" 
    description="How to select an authentication protocol for an Azure data service" 
-   services="service-name" 
+   services="cloud-services" 
    documentationCenter="dev-center-name" 
    authors="kevinscharpenberg" 
    manager="manager-alias" 
    editor=""/>
 
 <tags
-   ms.service="required"
-   ms.devlang="may be required"
+   ms.service="marketplace"
+   ms.devlang="na"
    ms.topic="article"
-   ms.tgt_pltfrm="may be required"
-   ms.workload="required" 
+   ms.tgt_pltfrm="na"
+   ms.workload="data-services" 
    ms.date="01/29/2015"
    ms.author="kevsch"/>
 
@@ -52,7 +52,7 @@ Whether the account key is included in the code or entered by the user, the acco
   * If you want individual users to pay for their usage you must manage their individual use and bill them.
 
 
-For more information, see [Implement HTTP Basic Auth in your Marketplace App](./marketplace-data-market-article-2.md/).
+For more information, see [Implement HTTP Basic Auth in your Marketplace App](./marketplace-data-market-implement-http-basic-auth-in-marketplace-app.md/).
 
 ## OAuth
 The Marketplace implementation of OAuth leverages the user’s Windows Live ID and password and the application’s registration key (client_id) to authenticate and grant access to datasets. Using OAuth provides some additional security benefits, such as the ability to authenticate the client and user and issue an access token directly to the client without potentially exposing it to others, including the resource owner. 
@@ -73,6 +73,6 @@ If your application uses the OAuth protocol to access the Marketplace:
  
   * The Marketplace manages the user’s account and billing.
 
-**See Implement OAuth in your Marketplace App.**
+For more information, see [Implement OAth in your Marketplace App](./marketplace-data-market-implement-oath-in-marketplace-app.md)
 
 Given the above it is reasonable to ask, “Why would anyone use HTTP Basic Authentication?” There are two reasons: 1) the code required to implement HTTP Basic Authentication is shorter and simpler than the code to implement OAuth, and 2) if you are the only one that is going to use the application, you don’t need the flexibility and complexity of OAuth.
