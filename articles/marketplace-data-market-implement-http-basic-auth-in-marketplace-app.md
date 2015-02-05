@@ -1,20 +1,20 @@
 <properties 
-   pageTitle="article-title" 
-   description="Article description that will be displayed on landing pages and in some search results" 
-   services="service-name" 
+   pageTitle="Implement HTTP Basic Authentication in Azure Marketplace Data Service" 
+   description="How to implement HTTP basic authentication in Azure Marketplace data services" 
+   services="cloud-services" 
    documentationCenter="dev-center-name" 
-   authors="GitHub-alias-of-author" 
+   authors="kevinscharpenberg" 
    manager="manager-alias" 
    editor=""/>
 
 <tags
-   ms.service="required"
-   ms.devlang="may be required"
+   ms.service="marketplace"
+   ms.devlang="na"
    ms.topic="article"
-   ms.tgt_pltfrm="may be required"
-   ms.workload="required" 
-   ms.date="mm/dd/yyyy"
-   ms.author="Your MSFT alias or your full email address"/>
+   ms.tgt_pltfrm="na"
+   ms.workload="data-services" 
+   ms.date="02/02/2015"
+   ms.author="kevsch"/>
 
 # Markdown Template (Article Title) 
 
