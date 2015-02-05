@@ -567,34 +567,27 @@ Error conditions and messages shown to the user when they are navigated to the c
 	Error Condition  										Message  
 	Query string value for response_type is 
 	missing or an unsupported value.					   <h1>Bad Request</h1>
-															p>The application you are using sent a bad request to 															the Marketplace. Contact your application vendor to report this error.</p>
-<p>Parameter <param/> was missing or was an unsupported value.</p>
+														   <p>The application you are using sent a bad request to the Marketplace. Contact your application vendor to report this error.</p>  <p>Parameter <param/> was missing or was an unsupported value.</p>
  
-Query string value for x_required_offers contains offer identifiers that do not exist.
- <h1>Bad Request</h1>
-<p>The application you are using sent a bad request to the Marketplace. Contact your application vendor to report this error.</p>
-<p>Offer does not exist: <BadOfferId/></p>
+	Query string value for x_required_offers 
+	contains offer identifiers that do not exist.			<h1>Bad Request</h1>  
+															<p>The application you are using sent a bad request to the Marketplace. Contact your application vendor to report this error.</p>  <p>Offer does not exist: <BadOfferId/></p>
  
-Query string value for client_id is invalid (that is, the client_id is not registered with the Marketplace).
- <h1>Bad Request</h1>
-<p>The application you are using sent a bad request to the Marketplace. Contact your application vendor to report this error.</p>
-<p>Application not registered: <ClientId/></p>
+	Query string value for client_id is invalid 
+	(that is, the client_id is not registered with the 
+	Marketplace).											<h1>Bad Request</h1>
+															<p>The application you are using sent a bad request to the Marketplace. Contact your application vendor to report this error.</p>  <p>Application not registered: <ClientId/></p>
  
-Query string value for client_id maps to an application that is suspended.
- <h1>Bad Request</h1>
-<p>The application you are using sent a bad request to the Marketplace. Contact your application vendor to report this error.</p>
-<p>Application is suspended: <ClientId/></p>
+	Query string value for client_id maps to an 
+	application that is suspended.							<h1>Bad Request</h1>
+															<p>The application you are using sent a bad request to the Marketplace. Contact your application vendor to report this error.</p>  <p>Application is suspended: <ClientId/></p>
  
-Too many x_premissions or x_required_offers entries.
- <h1>Bad Request</h1>
-<p>The application you are using sent a bad request to the Marketplace. Contact your application vendor to report this error.</p>
-<p>More than 50 identifiers were present for x_permissions or x_required_offers.</p>
+	Too many x_premissions or x_required_offers 
+	entries.												<h1>Bad Request</h1>
+															<p>The application you are using sent a bad request to the Marketplace. Contact your application vendor to report this error.</p>  <p>More than 50 identifiers were present for x_permissions or x_required_offers.</p>
  
 
-See Also
-Concepts
-Authenticate in your Marketplace App
-Select an Authentication Protocol
+
 
 
 --------------------------------------------------------------------------------

@@ -16,96 +16,114 @@
    ms.date="02/02/2015"
    ms.author="kevsch"/>
 
-# Markdown Template (Article Title) 
+## Implement HTTP Basic Auth in your Marketplace App 
 
-To copy the markdown from this template, copy the article in your local repo, or click the Raw button in the GitHub UI and copy the markdown.
-
-  ![][8]
-
-Intro paragraph: Lorem dolor amet, adipiscing elit. Phasellus interdum nulla risus, lacinia porta nisl imperdiet sed. Mauris dolor mauris, tempus sed lacinia nec, euismod non felis. Nunc semper porta ultrices. Maecenas neque nulla, condimentum vitae ipsum sit amet, dignissim aliquet nisi.
-
-## Subheading 1
-
-Aenean sit amet leo nec purus placerat fermentum ac gravida odio. Aenean tellus lectus, faucibus in rhoncus in, faucibus sed urna.  volutpat mi id purus ultrices iaculis nec non neque. <a href="http://msdn.microsoft.com/library/azure" target="_blank">Link text for link outside of azure.microsoft.com</a>. Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris.
-
-> [AZURE.NOTE] Indented note text.  The word 'note' will be added during publication. Ut eu pretium lacus. Nullam purus est, iaculis sed est vel, euismod vehicula odio. Curabitur lacinia, erat tristique iaculis rutrum, erat sem sodales nisi, eu condimentum turpis nisi a purus.
-
-1. Aenean sit amet leo nec **Purus** placerat fermentum ac gravida odio. 
-
-2. Aenean tellus lectus, faucibus in **Rhoncus** in, faucibus sed urna. Suspendisse volutpat mi id purus ultrices iaculis nec non neque.
- 
-  	![][5]
-
-3. Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris. Sed dolor dui, condimentum et varius a, vehicula at nisl. 
-
-  	![][6]
-
-
-Suspendisse volutpat mi id purus ultrices iaculis nec non neque. Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris. Otrus informatus: [Link 1 to another azure.microsoft.com documentation topic]
-
-## Subheading 2
-
-Ut eu pretium lacus. Nullam purus est, iaculis sed est vel, euismod vehicula odio.   
-
-1. Curabitur lacinia, erat tristique iaculis rutrum, erat sem sodales nisi, eu condimentum turpis nisi a purus. 
-
-        - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:
-        (NSDictionary *)launchOptions
-        {
-            // Register for remote notifications
-            [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
-            UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound];
-            return YES;
-        }   	 
-
-2. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. 
-
-   	    // Because toast alerts don't work when the app is running, the app handles them.
-        // This uses the userInfo in the payload to display a UIAlertView.
-        - (void)application:(UIApplication *)application didReceiveRemoteNotification:
-        (NSDictionary *)userInfo {
-            NSLog(@"%@", userInfo);
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Notification" message:
-            [userInfo objectForKey:@"inAppMessage"] delegate:nil cancelButtonTitle:
-            @"OK" otherButtonTitles:nil, nil];
-            [alert show];
-        }
-
-
-    > [AZURE.NOTE] Duis sed diam non <i>nisl molestie</i> pharetra eget a est. [Link 2 to another azure.microsoft.com documentation topic]
-
-
-Quisque commodo eros vel lectus euismod auctor eget sit amet leo. Proin faucibus suscipit tellus dignissim ultrices.
-
-## Subheading 3
- 
-1. Maecenas sed condimentum nisi. Suspendisse potenti. 
-
-  + Fusce
-  + Malesuada
-  + Sem
-
-2. Nullam in massa eu tellus tempus hendrerit.
-
-  	![][7]
-
-3. Quisque felis enim, fermentum ut aliquam nec, pellentesque pulvinar magna.
-
+ HTTP Basic Authentication is one of two authentication protocols supported by the Marketplace. Since this authentication method requires storing the user’s name and password for all access, we recommend that you use HTTP Basic Authentication only when you are creating an application for your own use or a single account.
  
 
+### HTTP Basic Authentication
+HTTP Basic Authentication uses a user id and password to authenticate a user and then grant or deny access to a protected resource. The Marketplace implementation of HTTP Basic Authentication ignores the user id and requires a valid Marketplace account key (for example, /Xroufd9KIlLkr4Mjf8afk). As you design your application you need to decide whether you will include the account key in the application code, which makes your account key vulnerable to anyone who has the application, or ask the user to enter it at run time, which is error prone given the length and complexity of the key.
 
-<!--Every topic should have next steps and links to the next logical set of content to keep the customer engaged-->
-## Next steps
+###Preliminaries
+The code to implement HTTP Basic Authentication is relatively short and simple. Before you get to the code you must do the following in your application code.
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ultricies, ipsum vitae volutpat hendrerit, purus diam pretium eros, vitae tincidunt nulla lorem sed turpis: [Link 3 to another azure.microsoft.com documentation topic]. 
+1. Ensure that your project includes System.Net and your service class or reference namespace.  
 
-<!--Image references-->
-[5]: ./media/markdown-template-for-new-articles/octocats.png
-[6]: ./media/markdown-template-for-new-articles/pretty49.png
-[7]: ./media/markdown-template-for-new-articles/channel-9.png
-[8]: ./media/markdown-template-for-new-articles/copytemplate.png
+	C#
+		using System.Net;
+		using service_class_namespace;
+ 
+	Visual Basic   
+    	Imports System.Net
+    	Imports service_class_namespace
+     
+2. Create a Uri instance from the service’s root URL. 
 
-<!--Link references-->
-[Link 1 to another azure.microsoft.com documentation topic]: ../virtual-machines-windows-tutorial/
-[Link 2 to another azure.microsoft.com documentation topic]: ../web-sites-custom-domain-name/
-[Link 3 to another azure.microsoft.com documentation topic]: ../storage-whatis-account/
+To find the service root URL:
+
+
+a. Click the **My Data** tab at the [Marketplace](https://datamarket.azure.com/account) home page.
+
+
+b. Locate the dataset you need the root service URL to.
+
+
+c. Click **Use**.
+
+
+d. Scroll down and click the **Details** tab.
+
+
+e. Include this URL in your application code.
+
+
+	C#   
+    	Uri serviceUri = new Uri(SERVICE_ROOT_URL);
+     
+	Visual Basic   
+    	Private serviceUri As Uri
+    	serviceUri = new Uri(SERVICE_ROOT_URL)
+     
+
+3. Create an identifier of the type of the dataset’s container. 
+
+There are two ways to find the container name.
+
+First,
+
+
+a. Open the **Object Browser** in Visual Studio.
+
+
+b. Locate your service class or reference.
+
+
+c. Double-click the class name to expand it.
+
+
+d. Locate a type whose name ends with “Container”. 
+For example: ContosoSalesContainer.
+
+
+Alternatively, you can use the service root URL to open the metadata page of the service. For example, if the service root URL is `https://datamarket.azure.com/data.ashx/contoso/sales/` navigate your browser to `https://datamarket.azure.com/data.ashx/contoso/sales/$metadata`.
+
+Find the EntityContainer tag. The value of the Name attribute is the service container name. Example: `<EntityContainer Name="ContosoSalesContainer">`
+
+
+	C#
+		ContosoSalesContainer context;
+     
+	Visual Basic
+		Private context As ContosoSalesContainer
+     
+
+### Implement HTTP Basic Authentication in an Application
+There are just two steps to implement HTTP Basic Authentication.
+
+1. Instantiate the context identifier.
+
+	C#   
+    	context = new ContosoSalesContainer(serviceUri);
+     
+	Visual Basic
+		context = new ContosoSalesContainer(serviceUri)
+ 
+
+2. Add the credentials to the context. 
+
+
+	C#   
+
+    context.Credentials = new NetworkCredential(USER_ID, SECRET_ACCOUNT_KEY);
+ 
+
+	Visual Basic   
+    context.Credentials = new NetworkCredential(USER_ID, SECRET_ACCOUNT_KEY)
+     
+
+#### Note  
+At this time the Marketplace ignores the USER_ID so you can use an empty string in its place. Do not skip this parameter.
+ 
+
+
+--------------------------------------------------------------------------------
