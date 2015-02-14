@@ -1,20 +1,20 @@
 <properties 
    pageTitle="article-title" 
    description="Article description that will be displayed on landing pages and in some search results" 
-   services="service-name" 
-   documentationCenter="dev-center-name" 
-   authors="GitHub-alias-of-author" 
+   services="cloud-services" 
+   documentationCenter="" 
+   authors="kevinscharpenberg" 
    manager="manager-alias" 
    editor=""/>
 
 <tags
-   ms.service="required"
-   ms.devlang="may be required"
+   ms.service="marketplace"
+   ms.devlang="na"
    ms.topic="article"
-   ms.tgt_pltfrm="may be required"
-   ms.workload="required" 
-   ms.date="mm/dd/yyyy"
-   ms.author="Your MSFT alias or your full email address"/>
+   ms.tgt_pltfrm="na"
+   ms.workload="data-services" 
+   ms.date="01/29/2015"
+   ms.author="kevsch"/>
 
 # Markdown Template (Article Title) 
 
