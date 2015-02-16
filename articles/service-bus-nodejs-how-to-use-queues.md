@@ -13,7 +13,7 @@
 	ms.tgt_pltfrm="na" 
 	ms.devlang="nodejs" 
 	ms.topic="article" 
-	ms.date="02/10/2015" 
+	ms.date="02/03/2015" 
 	ms.author="sethm"/>
 
 
@@ -21,21 +21,34 @@
 
 
 
-# How to use Service Bus queues
+# How to Use Service Bus Queues
 
-This guide describes how to use Service Bus queues. The samples are
+This guide will show you how to use Service Bus queues. The samples are
 written in JavaScript and use the Node.js Azure module. The scenarios
 covered include **creating queues, sending and receiving messages**, and
 **deleting queues**. For more information on queues, see the [Next
 Steps] section.
 
+## Table of Contents
+
+-   [What are Service Bus Queues?][]
+-   [Create a Service Namespace][]
+-   [Obtain the Default Management Credentials for the Namespace][]
+-   [Create a Node.js Application](#create-app)
+-   [Configure Your Application to Use Service Bus](#configure-app)
+-   [How to: Create a Queue](#create-queue)
+-   [How to: Send Messages to a Queue](#send-messages)
+-   [How to: Receive Messages from a Queue](#receive-messages)
+-   [How to: Handle Application Crashes and Unreadable Messages](#handle-crashes)
+-   [Next Steps](#next-steps)
+
 [AZURE.INCLUDE [howto-service-bus-queues](../includes/howto-service-bus-queues.md)]
 
-## Create a Node.js application
+## <a name="create-app"> </a>Create a Node.js Application
 
 Create a blank Node.js application. For instructions creating a Node.js application, see [Create and deploy a Node.js application to an Azure Web Site], [Node.js Cloud Service][Node.js Cloud Service] (using Windows PowerShell), or [Web Site with WebMatrix].
 
-## Configure your application to use Service Bus
+## <a name="configure-app"> </a>Configure Your Application to Use Service Bus
 
 To use Azure Service Bus, you need to download and use the
 Node.js azure package. This includes a set of convenience libraries that
@@ -74,7 +87,7 @@ the **server.js** file of the application:
 
     var azure = require('azure');
 
-### Set up an Azure Service Bus connection
+### Setup an Azure Service Bus Connection
 
 The azure module will read the environment variables AZURE\_SERVICEBUS\_NAMESPACE and AZURE\_SERVICEBUS\_ACCESS\_KEY for information required to connect to your Azure Service Bus. If these environment variables are not set, you must specify the account information when calling **createServiceBusService**.
 
@@ -82,7 +95,7 @@ For an example of setting the environment variables in a configuration file for 
 
 For an example of setting the environment variables in the management portal for an Azure Website, see [Node.js Web Application with Storage]
 
-## How to create a queue
+## <a name="create-queue"> </a>How to Create a Queue
 
 The **ServiceBusService** object lets you work with queues. The
 following code creates a **ServiceBusService** object. Add it near the
@@ -119,7 +132,7 @@ maximum queue size to 5GB a time to live of 1 minute:
         }
     });
 
-### Filters
+###Filters
 
 Optional filtering operations can be applied to operations performed using **ServiceBusService**. Filtering operations can include logging, automatically retrying, etc. Filters are objects that implement a method with the signature:
 
@@ -136,7 +149,7 @@ Two filters that implement retry logic are included with the Azure SDK for Node.
 	var retryOperations = new azure.ExponentialRetryPolicyFilter();
 	var serviceBusService = azure.createServiceBusService().withFilter(retryOperations);
 
-## How to send messages to a queue
+## <a name="send-messages"> </a>How to Send Messages to a Queue
 
 To send a message to a Service Bus queue, your application will call the
 **sendQueueMessage** method on the **ServiceBusService** object.
@@ -169,7 +182,7 @@ held in a queue but there is a cap on the total size of the messages
 held by a queue. This queue size is defined at creation time, with an
 upper limit of 5 GB.
 
-## How to receive messages from a queue
+## <a name="receive-messages"> </a>How to Receive Messages from a Queue
 
 Messages are received from a queue using the **receiveQueueMessage**
 method on the **ServiceBusService** object. By default, messages are
@@ -218,7 +231,7 @@ to true, then deletes the message using **deleteMessage**:
         }
     });
 
-## How to handle application crashes and unreadable messages
+## <a name="handle-crashes"> </a>How to Handle Application Crashes and Unreadable Messages
 
 Service Bus provides functionality to help you gracefully recover from
 errors in your application or difficulties processing a message. If a
@@ -246,7 +259,7 @@ to handle duplicate message delivery. This is often achieved using the
 **MessageId** property of the message, which will remain constant across
 delivery attempts.
 
-## Next Steps
+## <a name="next-steps"> </a>Next Steps
 
 Now that you've learned the basics of Service Bus queues, follow these
 links to learn more.

@@ -1,6 +1,6 @@
 <properties 
 	pageTitle="Create a Machine Learning workspace | Azure" 
-	description="How to create a workspace for Azure Machine Learning Studio" 
+	description="Create a workspace for Azure Machine Learning Studio" 
 	services="machine-learning" 
 	documentationCenter="" 
 	authors="garyericson" 
@@ -19,9 +19,6 @@
 
 # Create an Azure Machine Learning workspace 
 An Azure Machine Learning workspace (ML workspace) contains the tools you need to manage and publish experiments. For more information about Machine Learning workspaces, see link.
-
-[AZURE.INCLUDE [machine-learning-free-trial](../includes/machine-learning-free-trial.md)] 
-
 ## To create a workspace ##
 1. Sign-in to your Microsoft Azure account.
 2. In the Microsoft Azure services panel, click **MACHINE LEARNING**.

@@ -12,13 +12,12 @@
 	ms.tgt_pltfrm="na" 
 	ms.devlang="na" 
 	ms.topic="article" 
-	ms.date="02/12/2015" 
+	ms.date="01/12/2015" 
 	ms.author="cabailey"/>
 
 # Get Started with Azure Key Vault #
 
-## Introduction  
-Use this tutorial to help you get started with Azure Key Vault—currently in Preview—to create a hardened container (a vault) in Azure, to store and manage cryptographic keys and secrets in Azure. It walks you through the process of using Windows PowerShell to create a vault that contains a key or password that you can then use with an Azure application. It then shows you how an application can then use that key or password. 
+Use this tutorial to help you get started with Azure Key Vault—currently in Preview—to create a hardened container (a vault) in Azure, to store and manage cryptographic keys and secrets in Azure. It walks you through the process of using Windows PowerShell to create a vault that contains a key or password that you can then use with an Azure application. It then shows you how an application can then use that key or password.
 
 **Estimated time to complete:** 20 minutes
 
@@ -28,7 +27,7 @@ Use this tutorial to help you get started with Azure Key Vault—currently in Pr
 
 For overview information about Azure Key Vault, see [What is Azure Key Vault?](http://go.microsoft.com/fwlink/?LinkId=521401)
 
-## Prerequisites 
+## Prerequisites ##
 
 To complete this tutorial, you must have the following:
 
@@ -53,7 +52,7 @@ You can also read the following tutorials to get familiar with Azure Resource Ma
 - [How to install and configure Azure PowerShell](http://azure.microsoft.com/en-us/documentation/articles/install-configure-powershell/)
 - [Using Windows PowerShell with Resource Manager](http://azure.microsoft.com/en-us/documentation/articles/powershell-azure-resource-manager/)
 
-## Steps in this tutorial ##
+## In this tutorial ##
 
 * [Connect to your subscriptions](#connect)
 * [Load the Key Vault scripts](#scripts)
@@ -253,6 +252,8 @@ Other commands that you might useful for managing Azure Key Vault:
 
 
 ## <a id="next"></a>Next steps ##
+
+For more information, see the white paper [Azure Key Vault Concepts and Practices](http://go.microsoft.com/fwlink/?LinkID=521861).
 
 For a list of Windows PowerShell cmdlets and scripts for Azure Key Vault, see [Azure Key Vault Cmdlets](http://go.microsoft.com/fwlink/?LinkId=521403) and [Azure Key Vault Manager Cmdlets](http://go.microsoft.com/fwlink/?LinkId=522582). 
 

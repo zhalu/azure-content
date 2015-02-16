@@ -13,22 +13,13 @@
 	ms.topic="article" 
 	ms.tgt_pltfrm="na" 
 	ms.workload="data-services" 
-	ms.date="2/10/2015" 
+	ms.date="12/9/2014" 
 	ms.author="jgao"/>
 
 
 #Monitor and manage Stream Analytics jobs using Azure PowerShell
 
 Learn how to manage Azure Stream Analytics resources using Azure PowerShell.
-
->WACOM.NOTE The following error messages indicates that Azure Stream Analytics is not enabled on the subscription:
->
-	Error Code: InvalidResourceType.  Error Message: The resource type 'streamingjobs' could not be found in the namespace 'Microsoft.StreamAnalytics'.  
-
->To resolve this issue, please enable Stream Analytics preview on the subscription and then run the following cmdlets to switch the subscription:
->
-	Select-AzureSubscription –SubscriptionId xxxxxxxx -Default
-  	Select-AzureSubscription –SubscriptionId xxxxxxxx -Current 
 
 ##In this article
 
@@ -274,8 +265,7 @@ This tests the connection status of the output Output in StreamingJob.
 
 ##<a name="seealso"></a>See Also
 
-- [In
-- troduction to Azure Stream Analytics][stream.analytics.introduction]
+- [Introduction to Azure Stream Analytics][stream.analytics.introduction]
 - [Get started with Stream Analytics][stream.analytics.get.started]
 - [Limits in the Stream Analytics preview release][stream.analytics.limitations]
 - [Developer guide for Stream Analytics][stream.analytics.developer.guide]

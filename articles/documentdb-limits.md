@@ -2,7 +2,7 @@
 	pageTitle="DocumentDB limits for the preview release | Azure" 
 	description="Learn about the limits and quota enforcements of DocumentDB for the preview release." 
 	services="documentdb" 
-	authors="mimig1" 
+	authors="spelluru" 
 	manager="jhubbard" 
 	editor="cgronlun" 
 	documentationCenter=""/>
@@ -14,7 +14,7 @@
 	ms.devlang="na" 
 	ms.topic="article" 
 	ms.date="01/29/2014" 
-	ms.author="mimig"/>
+	ms.author="spelluru"/>
 
 
 #DocumentDB Limits for the Preview Release

@@ -18,10 +18,7 @@
 
 
 # Manage an Azure Machine Learning workspace 
-You can manage your Machine Learning workspaces to manage access, deploy production web services, and manage your Machine Learning web services. In addition, the dashboard tab provides an overview of your workspace usage and a quick glance of your workspace information. 
-
-
-[AZURE.INCLUDE [machine-learning-free-trial](../includes/machine-learning-free-trial.md)] 
+You can manage your Machine Learning workspaces to manage access, deploy production web services, and manage your Machine Learning web services. In addition, the dashboard tab provides an overview of your workspace usage and a quick glance of your workspace information.  
 
 On the **WEB SERVICES** tab, you can add, update, or delete a Machine Learning web service.  
 

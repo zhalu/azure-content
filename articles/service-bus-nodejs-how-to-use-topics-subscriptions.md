@@ -13,7 +13,7 @@
 	ms.tgt_pltfrm="na" 
 	ms.devlang="nodejs" 
 	ms.topic="article" 
-	ms.date="02/10/2015" 
+	ms.date="02/03/2015" 
 	ms.author="sethm"/>
 
 
@@ -21,24 +21,40 @@
 
 
 
-# How to Use Service Bus topics and subscriptions
+# How to Use Service Bus Topics/Subscriptions
 
-This guide describes how to use Service Bus topics and subscriptions
+This guide will show you how to use Service Bus topics and subscriptions
 from Node.js applications. The scenarios covered include **creating
 topics and subscriptions, creating subscription filters, sending
 messages** to a topic, **receiving messages from a subscription**, and
 **deleting topics and subscriptions**. For more information on topics
 and subscriptions, see the [Next Steps][] section.
 
+## Table of Contents
+
+-   [What are Service Bus Topics and Subscriptions?][]
+-   [Create a Service Namespace][]
+-   [Obtain the Default Management Credentials for the Namespace][]
+-   [Create a Node.js Application](#create-app)
+-   [Configure Your Application to Use Service Bus](#configure-app)
+-   [How to: Create a Topic](#create-topic)
+-   [How to: Create Subscriptions](#create-subscription)
+-   [How to: Send Messages to a Topic](#send-messages)
+-   [How to: Receive Messages from a Subscription](#receive-messages)
+-   [How to: Handle Application Crashes and Unreadable Messages](#handle-crashes)
+-   [How to: Delete Topics and Subscriptions](#delete)
+-   [Next Steps](#next-steps)
+
 [AZURE.INCLUDE [howto-service-bus-topics](../includes/howto-service-bus-topics.md)]
 
-## Create a Node.js application
+##<a name="create-app"></a> Create a Node.js Application
 
-Create a blank Node.js application. For instructions on creating a Node.js application, see [Create and deploy a Node.js application to an Azure Web Site], [Node.js Cloud Service][Node.js Cloud Service] (using Windows PowerShell), or [Web Site with WebMatrix].
+Create a blank Node.js application. For instructions creating a Node.js application, see [Create and deploy a Node.js application to an Azure Web Site], [Node.js Cloud Service][Node.js Cloud Service] (using Windows PowerShell), or [Web Site with WebMatrix].
 
-## Configure your application to use Service Bus
+##<a name="configure-app"></a> Configure Your Application to Use Service Bus
 
-To use Service Bus, download the Node.js azure package. This package includes a set of libraries that
+To use Azure Service Bus, you need to download and use the
+Node.js azure package. This includes a set of convenience libraries that
 communicate with the Service Bus REST services.
 
 ### Use Node Package Manager (NPM) to obtain the package
@@ -72,7 +88,7 @@ the **server.js** file of the application:
 
     var azure = require('azure');
 
-### Set up a Service Bus connection
+### Setup an Azure Service Bus Connection
 
 The azure module will read the environment variables AZURE\_SERVICEBUS\_NAMESPACE and AZURE\_SERVICEBUS\_ACCESS\_KEY for information required to connect to your Azure Service Bus. If these environment variables are not set, you must specify the account information when calling **createServiceBusService**.
 
@@ -80,7 +96,7 @@ For an example of setting the environment variables in a configuration file for 
 
 For an example of setting the environment variables in the management portal for an Azure Website, see [Node.js Web Application with Storage]
 
-## How to create a topic
+##<a name="create-topic"></a> How to Create a Topic
 
 The **ServiceBusService** object lets you work with topics. The
 following code creates a **ServiceBusService** object. Add it near the
@@ -118,7 +134,7 @@ setting the maximum topic size to 5GB a time to live of 1 minute:
         }
     });
 
-### Filters
+###Filters
 
 Optional filtering operations can be applied to operations performed using **ServiceBusService**. Filtering operations can include logging, automatically retrying, etc. Filters are objects that implement a method with the signature:
 
@@ -135,7 +151,7 @@ Two filters that implement retry logic are included with the Azure SDK for Node.
 	var retryOperations = new azure.ExponentialRetryPolicyFilter();
 	var serviceBusService = azure.createServiceBusService().withFilter(retryOperations);
 
-## How to create subscriptions
+##<a name="create-subscription"></a> How to Create Subscriptions
 
 Topic subscriptions are also created with the **ServiceBusService**
 object. Subscriptions are named and can have an optional filter that
@@ -148,7 +164,7 @@ application contains logic to create a subscription, it should first
 check if the subscription already exists by using the
 **getSubscription** method.
 
-### Create a subscription with the default (MatchAll) filter
+### Create a Subscription with the default (MatchAll) Filter
 
 The **MatchAll** filter is the default filter that is used if no filter
 is specified when a new subscription is created. When the **MatchAll**
@@ -163,9 +179,9 @@ filter.
         }
     });
 
-### Create subscriptions with filters
+### Create Subscriptions with Filters
 
-You can also create filters that allow you to scope which messages sent
+You can also setup filters that allow you to scope which messages sent
 to a topic should show up within a specific topic subscription.
 
 The most flexible type of filter supported by subscriptions is the
@@ -261,7 +277,7 @@ receivers subscribed to the 'AllMessages' topic subscription, and
 selectively delivered to receivers subscribed to the 'HighMessages' and
 'LowMessages' topic subscriptions (depending upon the message content).
 
-## How to send messages to a topic
+##<a name="send-messages"></a> How to Send Messages to a Topic
 
 To send a message to a Service Bus topic, your application must use the
 **sendTopicMessage** method of the **ServiceBusService** object.
@@ -302,7 +318,7 @@ held in a topic but there is a cap on the total size of the messages
 held by a topic. This topic size is defined at creation time, with an
 upper limit of 5 GB.
 
-## How to receive messages from a subscription
+##<a name="receive-messages"></a> How to Receive Messages from a Subscription
 
 Messages are received from a subscription using the
 **receiveSubscriptionMessage** method on the **ServiceBusService**
@@ -357,7 +373,7 @@ then receives a message from the 'HighMessages' subscription using
         }
     });
 
-## How to handle application crashes and unreadable messages
+##<a name="handle-crashes"></a> How to Handle Application Crashes and Unreadable Messages
 
 Service Bus provides functionality to help you gracefully recover from
 errors in your application or difficulties processing a message. If a
@@ -385,7 +401,7 @@ to handle duplicate message delivery. This is often achieved using the
 **MessageId** property of the message, which will remain constant across
 delivery attempts.
 
-## How to delete topics and subscriptions
+##<a name="delete"></a> How to Delete Topics and Subscriptions
 
 Topics and subscriptions are persistent, and must be explicitly deleted
 either through the Azure Management portal or programmatically.
@@ -408,7 +424,7 @@ following code demonstrates how to delete a subscription named
         }
     });
 
-## Next Steps
+##<a name="next-steps"></a> Next Steps
 
 Now that you've learned the basics of Service Bus topics, follow these
 links to learn more.

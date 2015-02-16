@@ -15,7 +15,7 @@
 	ms.devlang="Java" 
 	ms.topic="article" 
 	ms.date="10/16/2014" 
-	ms.author="ricksal"/>
+	ms.author="ricksal,glenga"/>
 
 # Call a custom API from the client
 

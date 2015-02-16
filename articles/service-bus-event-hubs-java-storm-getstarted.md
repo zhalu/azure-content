@@ -16,11 +16,9 @@
 	ms.date="1/13/2015" 
 	ms.author="sethm"/>
 
-# Get started with Event Hubs
+# <a name="getting-started"> </a>Get started with Event Hubs
 
 [AZURE.INCLUDE [service-bus-selector-get-started](../includes/service-bus-selector-get-started.md)]
-
-## Introduction
 
 Event Hubs is a highly scalable ingestion system that can intake millions of events per second, enabling an application to process and analyze the massive amounts of data produced by your connected devices and applications. Once collected into Event Hubs, you can transform and store data using any real-time analytics provider or storage cluster.
 
@@ -36,7 +34,7 @@ In order to complete this tutorial you will need the following:
 
 ## Create an Event Hub
 
-1. Log on to the [Azure management portal], and click **NEW** at the bottom of the screen.
+1. Log on to the [Azure Management Portal], and click **NEW** at the bottom of the screen.
 
 2. Click **App Services**, then **Service Bus**, then **Event Hub**, and then **Quick Create**.
 
@@ -79,10 +77,9 @@ Now you are ready to run the applications.
 
    	![][22]
 
-> [AZURE.NOTE] In this tutorial only, use Storm in local mode for development purposes. Refer to the [HDInsight Storm Overview] and the official [Apache Storm] documentation for more information of Storm deployments and patterns.
+> [AZURE.NOTE] In this tutorial only use Storm in local mode for development purposes. Refer to the [HDInsight Storm Overview] and the official [Apache Storm] documentation for more information of Storm deployments and patterns.
 
 ## Next Steps
-
 The following resources are available for developing applications integrating Event Hubs and Storm.
 
 - [Analyzing sensor data with Storm and HDInsight] is a full scenario tutorial using Event Hubs, Storm, and HBase to ingest sensor data in an Hadoop cluster.
