@@ -8,7 +8,7 @@
 
 - [Contribute to Azure documentation](./../CONTRIBUTING.md)
 
-- [Content channel guidance](./content-channel-guidance.md)
+- [Content channel guidance](../content-channel-guidance.md)
 
 - [Style and voice](./style-and-voice.md)
 
