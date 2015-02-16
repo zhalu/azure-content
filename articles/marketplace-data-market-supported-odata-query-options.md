@@ -44,7 +44,7 @@ All data feeds from the Marketplace are OData feeds. Read about OData at the [OD
 ###Supported OData Query Options
 
 <table>
-
+<tr>
 <td>$top
 </td>
 <td>The maximum number of items returned in the result set for each page.
@@ -169,6 +169,8 @@ second
 <td>round<br>
 ceiling<br>
 floor
+</td>
+</tr>
 </table>
 
 
