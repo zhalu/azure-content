@@ -2,7 +2,7 @@
    pageTitle="Implement HTTP Basic Authentication in Azure Marketplace Data Service" 
    description="How to implement HTTP basic authentication in Azure Marketplace data services" 
    services="cloud-services" 
-   documentationCenter="dev-center-name" 
+   documentationCenter="" 
    authors="kevinscharpenberg" 
    manager="manager-alias" 
    editor=""/>

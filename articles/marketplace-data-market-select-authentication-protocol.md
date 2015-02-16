@@ -2,7 +2,7 @@
    pageTitle="Select an Authentication Protocol" 
    description="How to select an authentication protocol for an Azure data service" 
    services="cloud-services" 
-   documentationCenter="dev-center-name" 
+   documentationCenter="" 
    authors="kevinscharpenberg" 
    manager="manager-alias" 
    editor=""/>

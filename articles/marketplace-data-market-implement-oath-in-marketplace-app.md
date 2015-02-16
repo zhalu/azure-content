@@ -2,7 +2,7 @@
    pageTitle="Implement OAth in Azure Marketplace Data Service" 
    description="How to implement OAth in Azure Marketplace data services" 
    services="cloud-services" 
-   documentationCenter="dev-center-name" 
+   documentationCenter="" 
    authors="kevinscharpenberg" 
    manager="manager-alias" 
    editor=""/>
