@@ -13,11 +13,24 @@
 	ms.tgt_pltfrm="na" 
 	ms.devlang="na" 
 	ms.topic="article" 
-	ms.date="2/10/2015" 
+	ms.date="11/13/2014" 
 	ms.author="spelluru"/>
 
 # Monitor Azure Data Factory using Azure Preview Portal
-This article describes various scenarios for using the Azure Preview Portal to monitor and manage Azure Data Factory.
+
+- [View all data factories in an Azure subscription](#AllDataFactories)
+- [View details about a data factory](#DataFactoryDetails)
+- [View diagram view of a data factory](#DataFactoryDiagram)
+- [View linked services in a data factory](#DataFactoryLinkedServices)
+- [View details about a linked service](#DataFactoryLinkedService) 
+- [View datasets in a data factory](#DataFactoryDatasets)
+- [View details about a dataset](#DataFactoryDataset)
+- [View details about a slice](#DataFactorySlice) 
+- [View all activity runs for a slice](#DataFactoryActivtyRuns) 
+- [View details about an activity run](#DataFactoryActivtyRunDetails)
+- [Operations Lens - Events in the past week](#EventsInThePastweek)  
+   
+
 
 ## <a name="AllDataFactories"></a> View all data factories in an Azure subscription
 

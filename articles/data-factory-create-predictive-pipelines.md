@@ -13,11 +13,10 @@
 	ms.tgt_pltfrm="na" 
 	ms.devlang="na" 
 	ms.topic="article" 
-	ms.date="2/10/2015" 
+	ms.date="12/05/2014" 
 	ms.author="spelluru"/>
 
 # Create Predictive Pipelines using Azure Data Factory and Azure Machine Learning 
-## Overview
 You can operationalize published [Azure Machine Learning][azure-machine-learning] models within Azure Data Factory pipelines.These pipelines are called predictive pipelines. To create a predictive pipeline, you will need:
 
 -	The published workspace model’s API Key and the batch scoring URL (see the image below)

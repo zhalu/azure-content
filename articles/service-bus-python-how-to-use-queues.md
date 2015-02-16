@@ -1,9 +1,9 @@
 <properties 
 	pageTitle="How to use Service Bus queues (Python) - Azure" 
-	description="Learn how to use Azure Service Bus queues from Python." 
+	description="Learn how to use Service Bus queues in Azure. Code samples written in Python." 
 	services="service-bus" 
 	documentationCenter="python" 
-	authors="huguesv" 
+	authors="sethmanheim" 
 	manager="timlt" 
 	editor=""/>
 
@@ -13,25 +13,35 @@
 	ms.tgt_pltfrm="na" 
 	ms.devlang="python" 
 	ms.topic="article" 
-	ms.date="02/10/2015" 
-	ms.author="huvalo"/>
+	ms.date="02/03/2015" 
+	ms.author="sethm"/>
 
 
 
 
 # How to Use Service Bus Queues
-
-This guide describes how to use Service Bus queues. The samples are
-written in Python and use the [Python Azure package][]. The scenarios
+This guide will show you how to use Service Bus queues. The samples are
+written in Python and use the Python Azure module. The scenarios
 covered include **creating queues, sending and receiving messages**, and
 **deleting queues**. For more information on queues, see the [Next Steps][] section.
 
+## Table of Contents
+
+-   [What are Service Bus Queues?][]
+-   [Create a Service Namespace][]
+-   [Obtain the Default Management Credentials for the Namespace][]
+-   [How to: Create a Queue][]
+-   [How to: Send Messages to a Queue][]
+-   [How to: Receive Messages from a Queue][]
+-   [How to: Handle Application Crashes and Unreadable Messages][]
+-   [Next Steps][]
+
 [AZURE.INCLUDE [howto-service-bus-queues](../includes/howto-service-bus-queues.md)]
 
-**Note:** If you need to install Python or the [Python Azure package][], please see the [Python Installation Guide](../python-how-to-install/).
+**Note:** If you need to install Python or the Client Libraries, please see the [Python Installation Guide](../python-how-to-install/).
 
 
-## How to create a queue
+## <a name="create-queue"> </a>How to Create a Queue
 
 The **ServiceBusService** object lets you work with queues. Add the following near the top of any Python file in which you wish to programmatically access Azure Service Bus:
 
@@ -59,7 +69,7 @@ maximum queue size to 5GB a time to live of 1 minute:
 
 	bus_service.create_queue('taskqueue', queue_options)
 
-## How to send messages to a queue
+## <a name="send-messages"> </a>How to Send Messages to a Queue
 
 To send a message to a Service Bus queue, your application will call the
 **send\_queue\_message** method on the **ServiceBusService** object.
@@ -77,7 +87,7 @@ held in a queue but there is a cap on the total size of the messages
 held by a queue. This queue size is defined at creation time, with an
 upper limit of 5 GB.
 
-## How to receive messages from a queue
+## <a name="receive-messages"> </a>How to Receive Messages from a Queue
 
 Messages are received from a queue using the **receive\_queue\_message**
 method on the **ServiceBusService** object:
@@ -116,7 +126,7 @@ and remove it from the queue.
 
 	msg.delete()
 
-## How to handle application crashes and unreadable messages
+## <a name="handle-crashes"> </a>How to Handle Application Crashes and Unreadable Messages
 
 Service Bus provides functionality to help you gracefully recover from
 errors in your application or difficulties processing a message. If a
@@ -144,13 +154,26 @@ to handle duplicate message delivery. This is often achieved using the
 **MessageId** property of the message, which will remain constant across
 delivery attempts.
 
-## Next Steps
+## <a name="next-steps"> </a>Next Steps
 
 Now that you have learned the basics of Service Bus queues, follow these
 links to learn more.
 
--   See the MSDN Reference: [Queues, Topics, and Subscriptions][].
+-   See the MSDN Reference: [Queues, Topics, and Subscriptions.][]
 
-[Azure Management Portal]: http://manage.windowsazure.com
-[Python Azure package]: https://pypi.python.org/pypi/azure  
-[Queues, Topics, and Subscriptions]: http://msdn.microsoft.com/en-us/library/windowsazure/hh367516.aspx
+  [Next Steps]: #next-steps
+  [What are Service Bus Queues?]: #what-are-service-bus-queues
+  [Create a Service Namespace]: #create-a-service-namespace
+  [Obtain the Default Management Credentials for the Namespace]: #obtain-default-credentials
+  [How to: Create a Queue]: #create-queue
+  [How to: Send Messages to a Queue]: #send-messages
+  [How to: Receive Messages from a Queue]: #receive-messages
+  [How to: Handle Application Crashes and Unreadable Messages]: #handle-crashes
+  [Queue Concepts]: ../../../DevCenter/dotNet/Media/sb-queues-08.png
+  [Azure Management Portal]: http://manage.windowsazure.com
+  
+  
+  
+  
+  
+  [Queues, Topics, and Subscriptions.]: http://msdn.microsoft.com/en-us/library/windowsazure/hh367516.aspx

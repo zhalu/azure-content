@@ -26,7 +26,22 @@ written in Ruby and use the Azure gem. The scenarios
 covered include **creating queues, sending and receiving messages**, and
 **deleting queues**. For more information on queues, see the [Next Steps](#next-steps) section.
 
-## What are Service Bus queues?
+## Table of Contents
+
+* [What are Service Bus Queues?](#what-are-service-bus-queues)
+* [Create a Service Namespace](#create-a-service-namespace)
+* [Obtain the Default Management Credentials for the Namespace](#obtain-default-credentials)
+* [Create a Ruby Application](#create-a-ruby-application)
+* [Configure Your Application to Use Service Bus](#configure-your-application-to-use-service-bus)
+* [Setup an Azure Service Bus Connection](#setup-a-windows-azure-service-bus-connection)
+* [How to Create a Queue](#how-to-create-a-queue)
+* [How to Send Messages to a Queue](#how-to-send-messages-to-a-queue)
+* [How to Receive Messages from a Queue](#how-to-receive-messages-from-a-queue)
+* [How to Handle Application Crashes and Unreadable Messages](#how-to-handle-application-crashes-and-unreadable-messages)
+* [Next Steps](#next-steps)
+
+<a id="what-are-service-bus-queues"></a>
+##What are Service Bus Queues?
 
 Service Bus Queues support a **brokered messaging communication**
 model. When using queues, components of a distributed application do not
@@ -58,7 +73,7 @@ a wide variety of scenarios:
 Using queues can enable you to scale out your applications better, and
 enable more resiliency to your architecture.
 
-## Create a service namespace
+## <a id="create-a-service-namespace"></a>Create a Service Namespace
 To begin using Service Bus queues in Azure, you must first create a service namespace. A service namespace provides a scoping container for addressing Service Bus resources within your application. You must create the 
 namespace through the command-line interface because the Portal does not create the service bus with an ACS connection.
 
@@ -72,7 +87,7 @@ To create a service namespace:
 
     ![Create Namespace](./media/service-bus-ruby-how-to-use-queues/showcmdcreate.png)
 
-## Obtain management credentials for the namespace
+## <a id="obtain-default-credentials"></a>Obtain Default Management Credentials for the Namespace
 In order to perform management operations, such as creating a queue on the new namespace, you must obtain the management credentials for the namespace.
 
 1. Log on to the [Azure Management Portal](http://manage.windowsazure.com/).
@@ -89,11 +104,11 @@ In order to perform management operations, such as creating a queue on the new n
 
        ![Copy key](./media/service-bus-ruby-how-to-use-queues/defaultkey.png)
 
-## Create a Ruby application
+## <a id="create-a-ruby-application"></a>Create a Ruby Application
 
 Create a Ruby application. For instructions, see [Create a Ruby Application on Azure](/en-us/develop/ruby/tutorials/web-app-with-linux-vm/).
 
-## Configure your application to use Service Bus
+## <a id="configure-your-application-to-use-service-bus"></a>Configure Your Application to Use Service Bus
 
 To use Azure service bus, you need to download and use the Ruby azure package, which includes a set of convenience libraries that communicate with the storage REST services.
 
@@ -109,7 +124,7 @@ Use your favorite text editor, add the following to the top of the Ruby file whe
 
     require "azure"
 
-## Set up an Azure Service Bus connection
+## <a id="setup-a-windows-azure-service-bus-connection"></a>Setup an Azure Service Bus Connection
 
 The azure module will read the environment variables **AZURE\_SERVICEBUS\_NAMESPACE** and **AZURE\_SERVICEBUS\_ACCESS_KEY** 
 for information required to connect to your Azure service bus namespace. If these environment variables are not set, you must specify the namespace information before using **Azure::ServiceBusService** with the following code:
@@ -119,7 +134,7 @@ for information required to connect to your Azure service bus namespace. If thes
 
 Set the service bus namespace value to the value you created rather than the entire URL. For example, use **"yourexamplenamespace"**, not "yourexamplenamespace.servicebus.windows.net". 
 
-## How to create a queue
+## <a id="how-to-create-a-queue"></a>How to Create a Queue
 
 The **Azure::ServiceBusService** object lets you work with queues. To create a queue, use the **create_queue()** method. The following example creates a queue or print out the error if there is any.
 
@@ -138,9 +153,9 @@ You can also pass in a **Azure::ServiceBus::Queue** object with additional optio
 
     queue = azure_service_bus_service.create_queue(queue)
 
-## How to send messages to a queue
+## <a id="how-to-send-messages-to-a-queue"></a>How to Send Messages to a Queue
 
-To send a message to a Service Bus queue, you application will call the **send\_queue\_message()** method on the **Azure::ServiceBusService** object. Messages sent to (and received from) service bus queues are **Azure::ServiceBus::BrokeredMessage** objects, and have a set of standard properties (such as **label** and **time\_to\_live**), a dictionary that is used to hold custom application specific properties, and a body of arbitrary application data. An application can set the body of the message by passing a string value as the message and any required standard properties will be populated with default values.
+To send a message to a service bus queue, you application will call the **send\_queue\_message()** method on the **Azure::ServiceBusService** object. Messages sent to (and received from) service bus queues are **Azure::ServiceBus::BrokeredMessage** objects, and have a set of standard properties (such as **label** and **time\_to\_live**), a dictionary that is used to hold custom application specific properties, and a body of arbitrary application data. An application can set the body of the message by passing a string value as the message and any required standard properties will be populated with default values.
 
 The following example demonstrates how to send a test message to the queue named "test-queue" using **send\_queue\_message()**:
 
@@ -150,7 +165,7 @@ The following example demonstrates how to send a test message to the queue named
 
 Service bus queues support a maximum message size of 256 KB (the header, which includes the standard and custom application properties, can have a maximum size of 64 KB). There is no limit on the number of messages held in a queue but there is a cap on the total size of the messages held by a queue. This queue size is defined at creation time, with an upper limit of 5 GB.
 
-## How to receive messages from a queue
+## <a id="how-to-receive-messages-from-a-queue"></a>How to Receive Messages from a Queue
 
 Messages are received from a queue using the **receive\_queue\_message()** method on the **Azure::ServiceBusService** object. By default, messages are read and locked without being deleted from the queue. However, you can delete messages from the queue as they are read by setting the **:peek_lock** option to **false**.
 
@@ -165,7 +180,7 @@ The example below demonstrates how messages can be received and processed using 
     message = azure_service_bus_service.receive_queue_message("test-queue")
     azure_service_bus_service.delete_queue_message(message)
 
-## How to handle application crashes and unreadable messages
+## <a id="how-to-handle-application-crashes-and-unreadable-messages"></a>How to Handle Application Crashes and Unreadable Messages
 
 Service bus provides functionality to help you gracefully recover from errors in your application or difficulties processing a message. If a receiver application is unable to process the message for some reason, then it can call the **unlock\_queue\_message()** method on the **Azure::ServiceBusService** object. This will cause service bus to unlock the message within the queue and make it available to be received again, either by the same consuming application or by another consuming application.
 
@@ -173,7 +188,7 @@ There is also a timeout associated with a message locked within the queue, and i
 
 In the event that the application crashes after processing the message but before the **delete\_queue\_message()** method is called, then the message will be redelivered to the application when it restarts. This is often called **At Least Once Processing**, that is, each message will be processed at least once but in certain situations the same message may be redelivered. If the scenario cannot tolerate duplicate processing, then application developers should add additional logic to their application to handle duplicate message delivery. This is often achieved using the **message\_id** property of the message, which will remain constant across delivery attempts.
 
-## Next Steps
+## <a id="next-steps"></a>Next Steps
 
 Now that you've learned the basics of Service Bus queues, follow these links to learn more.
 

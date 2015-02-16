@@ -17,11 +17,9 @@
 	ms.author="garye"/>
 
 
-#Troubleshooting guide: Create and connect to an Machine Learning workspace
+#Troubleshooting Guide: Creating and connecting to an Azure Machine Learning workspace
 
 This guide provides solutions for some frequently encountered challenges when you are setting up Azure Machine Learning workspaces.
-
-[AZURE.INCLUDE [machine-learning-free-trial](../includes/machine-learning-free-trial.md)]
 
 ##Workspace owner
 
