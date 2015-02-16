@@ -1,9 +1,9 @@
 <properties 
 	pageTitle="Step 1: Create a Machine Learning workspace | Azure" 
-	description="Solution walkthrough step 1: Create a new Azure Machine Learning Studio workspace" 
+	description="Step 1: Create a new Azure Machine Learning Studio workspace" 
 	services="machine-learning" 
 	documentationCenter="" 
-	authors="garyericson" 
+	authors="aryericson" 
 	manager="paulettm" 
 	editor="cgronlun"/>
 
