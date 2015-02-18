@@ -123,11 +123,11 @@ If you don’t have a Microsoft account (formerly known as a Live ID) you can si
 [Link to Microsoft account sign up](http://go.microsoft.com/fwlink/?linkid=202643)
 
 ###Orientation topic links
-- [Marketplace Overview](/marketplace-data-market-marketplace-overview.md) <br>
-- [What's New in the Public Marketplace](/marketplace-data-market-whats-new-in-the-public-marketplace.md)<br>
-- [Create Your Marketplace Account](/marketplace-data-market-create-your-marketplace-account.md)<br>
-- [Manage Your Marketplace Account](/marketplace-data-market-manage-your-marketplace-account.md)<br>
-- [Community Resources](/marketplace-data-market-community-resources.md)
+- [Marketplace Overview](./marketplace-data-market-marketplace-overview.md) <br>
+- [What's New in the Public Marketplace](./marketplace-data-market-whats-new-in-the-public-marketplace.md)<br>
+- [Create Your Marketplace Account](./marketplace-data-market-create-your-marketplace-account.md)<br>
+- [Manage Your Marketplace Account](./marketplace-data-market-manage-your-marketplace-account.md)<br>
+- [Community Resources](./marketplace-data-market-community-resources.md)
 
 ##See Also
 ###Concepts
