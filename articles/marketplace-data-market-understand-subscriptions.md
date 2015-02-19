@@ -167,7 +167,7 @@ For example: If your application runs a query that returns 100 or fewer records 
 
 
 
-![alt text](./media/marketplace-data-market-understand-subscriptions/subscriptiontype.png)
+![alt text](./media/marketplace-data-market-understand-subscriptions/subscriptiontype.PNG)
 
 ###Upgrade a Subscription
 If you discover that your subscription does not provide you with enough transactions, you can upgrade to a subscription with a higher transaction limit.
