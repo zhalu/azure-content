@@ -71,28 +71,28 @@ If you own and want to publish data or a application or service, the Marketplace
 </table>
 
 ####Consumer topic links
-- [Subscribe to a Data Offer](/marketplace-data-market-subscribe-to-a-data-offer.md)
-- [Query a Dataset](/marketplace-data-market-query-a-dataset.md)
-- [Download from the Marketplace to a file](/marketplace-data-market-download-from-the-marketplace-to-a-file.md)
-- [Import Marketplace data into Excel](/marketplace-data-market-import-marketplace-data-into-excel.md)
-- [Subscribe to an Application Offer](/marketplace-data-market-subscribe-to-an-application-offer.md)
-- [Use Auto-Refill to avoid service lapses](/marketplace-data-market-use-auto-refill-to-avoid-service-lapses.md)
-- [Understand Subscriptions](/marketplace-data-market-understand-subscriptions.md)
+- [Subscribe to a Data Offer](./marketplace-data-market-subscribe-to-a-data-offer.md)
+- [Query a Dataset](./marketplace-data-market-query-a-dataset.md)
+- [Download from the Marketplace to a file](./marketplace-data-market-download-from-the-marketplace-to-a-file.md)
+- [Import Marketplace data into Excel](./marketplace-data-market-import-marketplace-data-into-excel.md)
+- [Subscribe to an Application Offer](./marketplace-data-market-subscribe-to-an-application-offer.md)
+- [Use Auto-Refill to avoid service lapses](./marketplace-data-market-use-auto-refill-to-avoid-service-lapses.md)
+- [Understand Subscriptions](./marketplace-data-market-understand-subscriptions.md)
 
 ####Publisher topic links
 
-- [Publishing Overview](/marketplace-data-market-publishing-overview.md)
-- [Register as a Publisher](/marketplace-data-market-register-as-a-publisher.md)
-- [Add/Update your offerings](/marketplace-data-market-add-update-your-offerings.md)
-- [Provide payment info](/marketplace-data-market-provide-payment-info.md)
-- [Create promotional discounts](/marketplace-data-market-create-promotional-discounts.md)
-- [Track your sales](/marketplace-data-market-track-your-sales.md)
+- [Publishing Overview](./marketplace-data-market-publishing-overview.md)
+- [Register as a Publisher](./marketplace-data-market-register-as-a-publisher.md)
+- [Add/Update your offerings](./marketplace-data-market-add-update-your-offerings.md)
+- [Provide payment info](./marketplace-data-market-provide-payment-info.md)
+- [Create promotional discounts](./marketplace-data-market-create-promotional-discounts.md)
+- [Track your sales](./marketplace-data-market-track-your-sales.md)
 
 ####Developer topic links
-- [Query Marketplace Datasets from your App](/marketplace-data-market-query-marketplace-datasets-from-your-app.md)
-- [Authenticate in your Marketplace App](/marketplace-data-market-authenticate-in-your-marketplace-app.md)
-- [Retrieve a User's Subscription Info](/marketplace-data-market-retrieve-a-users-subscription-info.md)
-- [Distribute Your Application through the Marketplace](/marketplace-data-market-distribute-your-application-through-the-marketplace.md)
+- [Query Marketplace Datasets from your App](./marketplace-data-market-query-marketplace-datasets-from-your-app.md)
+- [Authenticate in your Marketplace App](./marketplace-data-market-authenticate-in-your-marketplace-app.md)
+- [Retrieve a User's Subscription Info](./marketplace-data-market-retrieve-a-users-subscription-info.md)
+- [Distribute Your Application through the Marketplace](./marketplace-data-market-distribute-your-application-through-the-marketplace.md)
 
 
 ###Topics for everyone
