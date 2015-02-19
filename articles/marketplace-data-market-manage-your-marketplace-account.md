@@ -35,7 +35,7 @@ Before you proceed, ensure that you have:
 If you need a Live ID go to the [Windows Live home page](http://go.microsoft.com/fwlink/?linkid=202643) and sign-up for a Live ID.
 
 
-- A valid Marketplace account. If you do not have a Marketplace account, go to [Create Your Marketplace Account](/marketplace-data-market-create-your-marketplace-account.md). and follow the instructions there.
+- A valid Marketplace account. If you do not have a Marketplace account, go to [Create Your Marketplace Account](./marketplace-data-market-create-your-marketplace-account.md). and follow the instructions there.
 
 ###Sections in This Topic
 
@@ -73,13 +73,13 @@ You can review and update your account information from the Account Information 
 3. If you want to update any information about your account, click **Edit**.
 4. If you want to review your **Billing History**, click **Billing History**. 
 
-![alt text](./media/marketplace-data-market-manage-your-marketplace-account/accountinfo.png)
+![](./media/marketplace-data-market-manage-your-marketplace-account/accountinfo.png)
 
 
-![alt text](./media/marketplace-data-market-manage-your-marketplace-account/myapps.png)
+![](./media/marketplace-data-market-manage-your-marketplace-account/myapps.png)
 
 
-![alt text](./media/marketplace-data-market-manage-your-marketplace-account/mydata.png)
+![](./media/marketplace-data-market-manage-your-marketplace-account/mydata.png)
 
 
 ####Account Keys
@@ -116,12 +116,12 @@ Create additional account keys that you can delete if the key becomes compromise
 2. Click **Account Keys**.
 
 3. Click **Add account key**. <br>
-![alt text](./media/marketplace-data-market-manage-your-marketplace-account/addaccountkeys.png)
+![](./media/marketplace-data-market-manage-your-marketplace-account/addaccountkeys.png)
 4. Enter a meaningful description for this key in the **Description** textbox. <br>
 The account key description is to help you organize your account keys. It has no bearing on access to your accounts.
 
 5. Click **Create**. 
-<br>![alt text](./media/marketplace-data-market-manage-your-marketplace-account/enterdescription.png)
+<br>![](./media/marketplace-data-market-manage-your-marketplace-account/enterdescription.png)
 
 ####Edit an Account Key
 Manage your account keys from the **Account Keys** page.
@@ -138,7 +138,7 @@ The account key description is to help you organize your account keys. It has no
 5. If you want to change the key’s value, check the **Create new account key value** checkbox.
 
 6. Click **Continue**. 
-![alt text](./media/marketplace-data-market-manage-your-marketplace-account/editaccountkey.png)
+![](./media/marketplace-data-market-manage-your-marketplace-account/editaccountkey.png)
 
 ####Delete an Account Key
 Manage your account keys from the **Account Keys** page.
