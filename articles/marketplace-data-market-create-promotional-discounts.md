@@ -41,11 +41,11 @@ After you sign in you go to the **My Offerings** page.
 
 5) Click the **Promotions** tab. (Figure 1)
 
-![alt text](./marketplace-data-market-create-promotional-discounts/myofferings.png)
+![](./media/marketplace-data-market-create-promotional-discounts/myofferings.png)
 
 6) Click **Add Promotion.** (Figure 2)
 
-![alt text](./marketplace-data-market-create-promotional-discounts/addpromotion.png)
+![](./media/marketplace-data-market-create-promotional-discounts/addpromotion.png)
 
 7) Fill in the values you want for this coupon using the **Add Promotion** dialog. The coupon code must be alphanumeric. The coupon code must be unique among all your active promotion codes.
 
@@ -76,11 +76,11 @@ Set the number of times this promotion code can be redeemed, from 1 to unlimited
 
 - When you finish filling in the fields, click **Ok** or **Cancel**. (Figure 3.9)
 
-![alt text](./marketplace-data-market-create-promotional-discounts/coupondialog.png)
+![](./media/marketplace-data-market-create-promotional-discounts/coupondialog.png)
 
 After you click **OK**, you return to **My Promotions**. Here you can see all of your promotions, including the one you created, with their details. (Figure 4)
 
-![alt text](./marketplace-data-market-create-promotional-discounts/mypromotions.png)
+![](./media/marketplace-data-market-create-promotional-discounts/mypromotions.png)
 
 
 ###Redeem Promotion Codes
