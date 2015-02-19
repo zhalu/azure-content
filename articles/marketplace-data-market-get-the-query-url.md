@@ -32,7 +32,7 @@ If you need a Live ID go to the [Windows Live home page](http://go.microsoft.com
 
 
 - A valid Marketplace account. <br>
-If you do not have a Marketplace account, go to the topic [Create Your Marketplace Account](./marketplace-data-market-create-Your-marketplace-account.md) and follow the instructions there.
+If you do not have a Marketplace account, go to the topic [Create Your Marketplace Account](./marketplace-data-market-create-your-marketplace-account.md) and follow the instructions there.
 
 
 - A subscription to a dataset of interest. <br>
@@ -58,7 +58,7 @@ The query URL is to the left and above the query results. (See Figure 1)
 
 
 
-![alt text](./media/marketplace-data-market-get-the-query-url/query-url.png)
+![](./media/marketplace-data-market-get-the-query-url/query-url.png)
 
 ##See Also
 ###Tasks
