@@ -1,7 +1,7 @@
    
 <properties 
-   pageTitle="Import Marketplace data into Excel" 
-   description="How to import Marketplace data into Excel" 
+   pageTitle="Import Marketplace data into Power Query for Excel" 
+   description="How to import Marketplace data Power Query for Excel" 
    services="cloud-services" 
    documentationCenter="" 
    authors="kevinscharpenberg" 
@@ -17,13 +17,20 @@
    ms.date="02/16/2015"
    ms.author="kevsch"/>
  
-#   Import Marketplace data into Excel 
+#   Import Marketplace data into Power Query for Excel 
  
+This topic covers how to import a Windows Azure Marketplace (WAM) dataset into Microsoft Power Query for Excel. Power Queryis a comprehensive ETL tool that you can use to merge data from multiple sources and formats so as to gain new insights and move your business to the next level. The article assumes that you already have a Marketplace account and subscription to the dataset you want to import.
  -----------
 
 There are two prerequisites:
 
-If you have an Marketplace account and the Excel Marketplace add-in, you can import data directly into your Excel worksheet. Once you have the data in your worksheet you can create graphs, do analysis on the data, and any other Excel action you desire.
+A Windows Azure Marketplace (WAM) account and subscription to the dataset you want to use. <br>
+If you do not have a Marketplace account see the topic. <br>
+If you need to subscribe to a Marketplace dataset see the topic.<br><br>
+
+
+The Power Query Excel add-in installed. <br>
+If you have not installed the Power Query add-in go to the Power Query download center, download and install the add-in before you continue. The Microsoft Power Query for Excel prerequisites are listed on the linked page.
 
  -----------
 
