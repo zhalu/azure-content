@@ -47,27 +47,27 @@ At the end of the section are links to example code that leverages the WAM.
 
 <table>
 
-<td>Topic</td><td>Description</td>
+<tr><td>Topic</td><td>Description</td>
 </tr>
   <tr>
 <td>Query Marketplace Datasets from your App
 </td><td>Explains and walks you through authentication and queries in the Marketplace. Includes code examples.
 
 </td>
-</tr><td>Authenticate in your Marketplace App
+</tr><tr><td>Authenticate in your Marketplace App
 </td><td>The WAM supports both OAuth and HTTP Basic Auth for authentication. This section helps you decide which to use in your application and then walks you through implementing your choice.
 
 </td>
-</tr><td>Retrieve a User's Subscription Info
+</tr><tr><td>Retrieve a User's Subscription Info
 </td><td>Walks you through how to determine which WAM offers a user is subscribed to.
 
 
 </td>
-</tr><td>Distribute Your Application through the Marketplace
+</tr><tr><td>Distribute Your Application through the Marketplace
 </td><td>Walks you through how to register, test and deploy your application in the Marketplace. Includes code examples.
 
 </td>
-</tr><td>Marketplace Code Examples
+</tr><tr><td>Marketplace Code Examples
 </td><td>Links you to complete and functional code examples.
 </td>
 </tr>
