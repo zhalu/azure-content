@@ -41,7 +41,7 @@ A detailed listing of all account transactions during this statements period.
 
 You can download a CSV (Comma Separated Values) file of this statement by clicking **Download CSV file**. (Figure 1:4)
 
-![alt text](./marketplace-data-market-track-your-sales/financialstatements.png)
+![](./media/marketplace-data-market-track-your-sales/financialstatements.png)
 
 ##See Also
 ###Get Assistance <br>
