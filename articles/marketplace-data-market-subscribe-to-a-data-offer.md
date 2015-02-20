@@ -59,7 +59,7 @@ To find a dataset that looks like it might be what you need:
 2. If you know what publisher or category you're interested in, you can optionally click a category or publisher to browse a subset of available offers.
 
 3. Browse through the dataset offerings. Read the descriptions until you find a dataset of interest.  <br>
-If the publisher provides sample data the phrase **View sample data** is to the right of the offering (Figure 1.1). Click this to view a sample of the data available through this offering. (Figure 1) Click **Hide sample data** (Figure 1.1) to hide the data once you examine it. <br> ![alt text](./media/marketplace-data-market-subscribe-to-a-data-offer/viewdata.png)
+If the publisher provides sample data the phrase **View sample data** is to the right of the offering (Figure 1.1). Click this to view a sample of the data available through this offering. (Figure 1) Click **Hide sample data** (Figure 1.1) to hide the data once you examine it. <br> ![](./media/marketplace-data-market-subscribe-to-a-data-offer/viewdata.png)
 
 4. Click the name of the dataset.
 
@@ -117,7 +117,7 @@ If a dataset has more than one data series available, each series is listed sepa
 </tr>
 </table>
 
-![alt text](./media/marketplace-data-market-subscribe-to-a-data-offer/detailstab.png)
+![](./media/marketplace-data-market-subscribe-to-a-data-offer/detailstab.png)
 
 ###Subscribe to the Dataset
 Some publishers of paid datasets offer one-month trial subscriptions. A trial subscription allows you to "try out" the dataset before you commit to purchase it. If you sign up for a trial subscription, it automatically rolls over to a paid subscription if not canceled before the end of the trial period. <br>
@@ -126,7 +126,7 @@ Some publishers of paid datasets offer one-month trial subscriptions. A trial su
 
 
 2) If there is more than one subscription variant, click **Sign up** (free variants) or **Buy** (paid variants) for the variant you want. <br><br>
-For information on subscription costs and billing, see [Understand Subscriptions](./marketplace-data-market-understand-suscriptions.md).
+For information on subscription costs and billing, see [Understand Subscriptions](./marketplace-data-market-understand-subcriptions.md).
 
 If a publisher offers both paid and free subscriptions, the free subscriptions are generally restricted to noncommercial use. Read the **Publisher Terms Of Use** carefully so you know the limitations on the service you selected. 
 
@@ -146,7 +146,7 @@ If this is a paid or trial subscription, you are taken to the **Purchase** page 
 If you have a discount code, click the **Have a Promotion Code**? Link (Figure 3.1), enter the promotion code in the dialog (Figure 3.2) and click **OK**. (Figure 3.3) <br>
 For more information on promotion codes see the **Promotion Codes** section in this topic.
 
-![alt text](./media/marketplace-data-market-subscribe-to-a-data-offer/promotioncode.png)
+![](./media/marketplace-data-market-subscribe-to-a-data-offer/promotioncode.png)
 
 3) On the **Thank You** page, click **Print** if you want a hard copy of the subscription receipt for your records.
 
@@ -191,8 +191,8 @@ After you subscribe to a dataset, there are additional resources available to yo
 </tr>
 <tr><td>Learn How To Use This Data in Visual Studio
 
-</td><td>riUse Visual Studio and its strongly typed data access with complete IntelliSense to ease development.
-ght</td>
+</td><td>Use Visual Studio and its strongly typed data access with complete IntelliSense to ease development.
+</td>
 </tr>
 </table>
  -----------
