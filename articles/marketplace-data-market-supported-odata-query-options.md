@@ -49,13 +49,13 @@ All data feeds from the Marketplace are OData feeds. Read about OData at the [OD
 </td>
 <td>The maximum number of items returned in the result set for each page.
 </td>
-</tr>
+</tr><tr>
 <td>$skip
 </td>
 <td>The number of rows to skip in the result set before beginning to return results.
 
 </td>
-</tr><td>$filter
+</tr><tr><td>$filter
 </td>
 <td>
 
@@ -77,46 +77,46 @@ Or
 
 
 
-</tr><td>$orderby
+</tr><tr><td>$orderby
 </td>
 <td>Specifies the sort order of the result set. <br>
 NOTE: Requires DataServiceVersion 2.0 or higher. To determine DataServiceVersion see Determine DataServiceVersion later in this topic.
 
 </td>
-</tr><td>$select
+</tr><tr><td>$select
 </td>
 <td> Specifies the fields returned in the result set.
 
 </td>
-</tr><td>$skiptoken
+</tr><tr><td>$skiptoken
 </td>
 <td>An opaque value that must be passed back to the server in order to continue getting results for the query. <br> For more information see Skip Token System Query Option ($skiptoken) at OData.org.
 
 </td>
-</tr><td>$count
+</tr><tr><td>$count
 </td>
 <td>Returns the count of a collection of entities. <br>
 NOTE: Requires DataServiceVersion 2.0 or higher. To determine DataServiceVersion see Determine DataServiceVersion in this topic.
 
 </td>
-</tr><td>$inlinecount
+</tr><tr><td>$inlinecount
 </td>
 <td>$inlinecount is only supported for flexible query services. It is not supported for fixed query services. <br>
 NOTE: Requires DataServiceVersion 2.0 or higher. To determine DataServiceVersion see Determine DataServiceVersion later in this topic.
 
 </td>
-</tr><td>$metadata
+</tr><tr><td>$metadata
 </td>
 <td>Retrieves a list of fields, their data types, mode, and other related information in a dataset.
 
 </td>
-</tr><td>ID operators
+</tr><tr><td>ID operators
 
 </td>
 <td>E.g. "/Companies('Microsoft')"
 
 </td>
-</tr><td>Comparison operators
+</tr><tr><td>Comparison operators
 
 </td>
 <td>eq – Equal to <br>
@@ -127,18 +127,18 @@ gt – Greater than <br>
 ge – Greater than or equal to <br>
 
 </td>
-</tr>
+</tr><tr>
 
 
 </td>
-</tr><td>Logical operators
+</tr><tr><td>Logical operators
 </td>
 <td>and – True only if both operands are true <br>
 or – True if either or both operands are true <br>
 not – opposite of operand 
 
 
-</tr><td>Arithimetic operators
+</tr><tr><td>Arithimetic operators
 
 
 </td>
@@ -148,11 +148,11 @@ mult – Multiplication operator<br>
 div – Division operator<br>
 mod – Modulo (remainder after integer division) operator
 
-</tr><td>Grouping operators
+</tr><tr><td>Grouping operators
 </td>
 <td>( and )
 
-</tr><td>DateTime Functions
+</tr><tr><td>DateTime Functions
 
 </td>
 <td>year<br>
@@ -163,7 +163,7 @@ minute<br>
 second
 
 
-</tr><td>Math functions
+</tr><tr><td>Math functions
 
 </td>
 <td>round<br>
