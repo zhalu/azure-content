@@ -70,7 +70,7 @@ Now you can create and market your applications and leave provisioning to the Ma
 ####Publish Your Marketplace Application
 The Marketplace provides a centralized place where you can market your applications. Like data publishers, you do not need to concern yourself with the subscription or billing process, the Marketplace takes care of those details for you. You just cash the checks we send to you.
 
-Guidance for creating a Marketplace application is available at [Develop a Marketplace Application](./marketplace-data-market-develop-a-marketplace-account.md).
+Guidance for creating a Marketplace application is available at [Develop a Marketplace Application](./marketplace-data-market-develop-a-marketplace-application.md).
 
 ####Subscribe to a Marketplace Application
 The Marketplace provides a centralized location where you can search for and subscribe to applications that leverage Microsoft Azure services. Browse the store of available applications and subscribe to any that provide you with you need.
@@ -97,7 +97,7 @@ Manage your account keys and details, and browse you data and application subscr
 
 **Home Page – SU3**
 
-![alt text](./media/marketplace-data-market-whats-new-in-the-public-marketplace/homepage.png)
+![](./media/marketplace-data-market-whats-new-in-the-public-marketplace/homepage.png)
 
 ###Marketplace SU2 Improvements
 
@@ -135,7 +135,7 @@ The User Interface (UI) for the Marketplace is changed.
 
 **Marketplace Home Page**
 
-![alt text](./media/marketplace-data-market-whats-new-in-the-public-marketplace/homepage2.png)
+![](./media/marketplace-data-market-whats-new-in-the-public-marketplace/homepage2.png)
 
 - **Learn** - find out about the Marketplace.
 
