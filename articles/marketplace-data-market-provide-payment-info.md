@@ -24,7 +24,7 @@ Use the Marketplace Settings tab to add or edit your publisher registration, ban
 Select from among three groups of setting to add or update. The Publisher Details page allows you to update the information you entered when you registered to be a data publisher. Bank account information must be entered before you can actually publish your data on the Marketplace. Your tax profile is also necessary before you publish your data.
 
 
-![alt text](./marketplace-data-market-provide-payment-info/azuresettings.png)
+![](./media/marketplace-data-market-provide-payment-info/azuresettings.png)
 
 ###Publisher Details
 Click **Edit** behind the Publisher Details link to update your publisher registration information.
@@ -32,7 +32,7 @@ Click **Edit** behind the Publisher Details link to update your publisher regist
 	*Note
 	You cannot change your tax profile type or your country of residence or business.
 
-![alt text](./marketplace-data-market-provide-payment-info/windowsazure.png)
+![](./media/marketplace-data-market-provide-payment-info/windowsazure.png)
 
 To save the changes you made click **Save**. To keep the previous values click **Cancel**.
 
@@ -69,14 +69,14 @@ In order for you to get paid you must provide information about your bank accoun
 
 After you fill in the information click **Next** or **Cancel**.
 
-![alt text](./marketplace-data-market-provide-payment-info/bankaccount.png)
+![](./media/marketplace-data-market-provide-payment-info/bankaccount.png)
 
 ###Tax Profile
 
 In order to receive payments you must complete a tax profile. When you finish click **Next** or **Cancel**.
 
 
-![alt text](./marketplace-data-market-provide-payment-info/taxprofile.png)
+![](./media/marketplace-data-market-provide-payment-info/taxprofile.png)
 
 ##See Also
 ###Concepts
