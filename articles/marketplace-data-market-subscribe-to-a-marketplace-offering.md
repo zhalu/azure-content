@@ -23,11 +23,11 @@ The Marketplace is a web service that allows you to discover and access premium 
 	
  -----------
 ###Sections in This Topic
-[Understand Subscriptions](/marketplace-data-market-understand-subscriptions) <br>
-[Marketplace billing and how it works](/marketplace-data-market-marketplace-billing-and-how-it-works.md)<br>
-[Subscribe to a Data Offer](/marketplace-data-market-subscribe-to-a-data-offer)<br>
-[Subscribe to an Application Offer](/marketplace-data-market-subscribe-to-an-application-offer.md)<br>
-[Use Auto-Refill to avoid service lapses](/marketplace-data-market-use-auto-refill-to-avoid-service-lapses.md)<br>
+[Understand Subscriptions](./marketplace-data-market-understand-subscriptions.md) <br>
+[Marketplace billing and how it works](./marketplace-data-market-marketplace-billing-and-how-it-works.md)<br>
+[Subscribe to a Data Offer](./marketplace-data-market-subscribe-to-a-data-offer.md)<br>
+[Subscribe to an Application Offer](./marketplace-data-market-subscribe-to-an-application-offer.md)<br>
+[Use Auto-Refill to avoid service lapses](./marketplace-data-market-use-auto-refill-to-avoid-service-lapses.md)<br>
 
 <table>
 <tr><td>Topic </td><td>Topic Description </td>
