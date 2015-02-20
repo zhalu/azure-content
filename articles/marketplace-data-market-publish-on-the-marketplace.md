@@ -39,26 +39,26 @@ To become a publisher on the Marketplace, register as a publisher.
 [Track your sales](./marketplace-data-market-track-your-sales.md)
  
 <table>
-
+<tr>
 <td>Topic</td><td>Description</td>
 </tr>
   <tr>
 <td>Publishing Overview
 </td><td>Brief overview of the phases to getting your offering published.
 </td>
-</tr><td>Register as a Publisher
+</tr><tr><td>Register as a Publisher
 </td><td>Walks you through the publisher registration process.
 </td>
-</tr><td>Add/Update your offerings
+</tr><tr><td>Add/Update your offerings
 </td><td>Walks you through how to create a draft offering for approval.
 </td>
-</tr><td>Provide payment info
+</tr><tr><td>Provide payment info
 </td><td>Walks you through the various settings you need to manage for your account and offerings – Publisher Details, Bank Account, and Tax Profile.
 </td>
-</tr><td>Create promotional discounts
+</tr><tr><td>Create promotional discounts
 </td><td>Walks you through the process to create discount codes. Discount codes can be used to promote your offerings.
 </td>
-</tr><td>Track your sales
+</tr><tr><td>Track your sales
 </td><td>Various reports on your offering sales. <br>
 This tab is only visible and available after you generate income.
 </td>
