@@ -28,6 +28,7 @@ There are two ways to get your dataset from the Marketplace into PowerPivot:
 - While using Service Explorer in the Marketplace, you can export from Service Explorer to PowerPivot. See the article [Download from the Marketplace to PowerPivot](marketplace-data-market-download-from-the-marketplace-to-powerpivot.md).
 
 - While using Excel 2010, you can import from the Marketplace into PowerPivot (if you have the installed the Excel PowerPivot add-in). The subject of this article.
+
   -----------
  
 ###Import a dataset into Excel 2010 PowerPivot
@@ -78,7 +79,7 @@ If PowerPivot for Microsoft Excel 2010 is not installed on your computer, go to 
 11. Click **Finish** to import your data. 
 
 12. After the data is completed, click **Close**. <br> 
-You can analyze the data using PowerPivot. For information on using PowerPivot see the videos at the [PowerPivot download page](http://www.microsoft.com/en-us/server-cloud/solutions/business-intelligence/default.aspx), or search for “PowerPivot training” on [Bing.com](www.bing.com).
+You can analyze the data using PowerPivot. For information on using PowerPivot see the videos at the [PowerPivot download page](http://www.microsoft.com/en-us/server-cloud/solutions/business-intelligence/default.aspx), or search for “PowerPivot training” on [Bing.com](http://www.bing.com).
 
 
 ##See Also
