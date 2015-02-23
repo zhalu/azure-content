@@ -29,13 +29,13 @@ The Windows Azure Marketplace (WAM) is a global service. The web UI corresponds 
 The following steps change the language in the web UI. You can change the language from any screen in the Marketplace.
 
 1. Locate the Language link at the top of the page. (Figure 1)
-<br>![alt text](./media/marketplace-data-market-set-the-marketplace-ui-language/currentuilanguage.png)
+<br>![](./media/marketplace-data-market-set-the-marketplace-ui-language/currentuilanguage.png)
 
 2. Click the language, for example, English. <br>
 3. On the Select your language page, locate and click the language you prefer. (Figure 2) <br<br>
-![alt text](./media/marketplace-data-market-set-the-marketplace-ui-language/preferreduilanguage.png)<br>
+![](./media/marketplace-data-market-set-the-marketplace-ui-language/preferreduilanguage.png)<br>
 <br>This changes only the interface language. The language used in offering titles and descriptions remains the same. (Figure 3) To see the offering description in the language you prefer you must have the text translated. See the section **Translate the text**.<br>
-![alt text](./media/marketplace-data-market-set-the-marketplace-ui-language/descriptionlanguage.png)
+![](./media/marketplace-data-market-set-the-marketplace-ui-language/descriptionlanguage.png)
 
 ###Translate the text
 1. Highlight the section of text you want translated. 
@@ -47,6 +47,6 @@ The following steps change the language in the web UI. You can change the langua
 4. From the context menu, select **Translate with Bing**.
 
 5. In the Bing translator window, set the **Translate from**: and **Translate to**: dropdowns. 
-![alt text](./media/marketplace-data-market-set-the-marketplace-ui-language/bingtranslator.png)
+![](./media/marketplace-data-market-set-the-marketplace-ui-language/bingtranslator.png)
 6. Click **Translate**.<br> 
 The original text and its translation appear in rectangles below the dropdowns.
