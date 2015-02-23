@@ -42,7 +42,7 @@ The code to implement HTTP Basic Authentication is relatively short and simple. 
 To find the service root URL:
 
 
-a. Click the **My Data** tab at the [Marketplace](https://datamarket.azure.com/account) home page.
+a. Click the **My Data** tab at the [Marketplace](https://datamarket.azure.com) home page.
 
 
 b. Locate the dataset you need the root service URL to.
