@@ -13,7 +13,11 @@
 	ms.tgt_pltfrm="na" 
 	ms.devlang="dotnet" 
 	ms.topic="article" 
+<<<<<<< HEAD
 	ms.date="02/03/2015" 
+=======
+	ms.date="02/12/2015" 
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 	ms.author="sethm"/>
 
 
@@ -47,7 +51,7 @@ In the current release there are a few API features that are not supported when 
 
 ### Configuration via App.config
 
-It is good practice for applications to use the App.config configuration file to store settings. For Service Bus applications, you can use App.config to store the settings for the Service Bus **ConnectionString**. In addition, this sample application stores the name of the Service Bus messaging entity that it uses.
+It is recommended practice for applications to use the App.config configuration file to store settings. For Service Bus applications, you can use App.config to store the Service Bus **ConnectionString**. This sample application also uses App.config to store the name of the Service Bus messaging entity that it uses.
 
 A sample App.config file is shown below:
 
@@ -66,7 +70,11 @@ The value of the **Microsoft.ServiceBus.ConnectionString** setting is the Servic
 
 	Endpoint=sb://[namespace].servicebus.windows.net;SharedSecretIssuer=[issuer name];SharedSecretValue=[issuer key];TransportType=Amqp
 
+<<<<<<< HEAD
 Where [namespace], [issuer name], and [issuer key] are obtained from the Azure Management Portal. For more information, see [How to Use Service Bus Queues][].
+=======
+Where [namespace] and [SAS key] are obtained from the Azure Management Portal. For more information, see [How to Use Service Bus Queues][].
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 When using AMQP, the connection string is appended with ";TransportType=Amqp", which tells the client library to make its connection to Service Bus using AMQP 1.0.
 

@@ -55,7 +55,11 @@ Default values for the ports and protocol for these endpoints are provided when 
 
 7. In **Public Port** and **Private Port**, type port numbers that you want to use. These port numbers can be different. The public port is the entry point for communication from outside of Azure and is used by the Azure load balancer. You can use the private port and firewall rules on the virtual machine to redirect traffic in a way that is appropriate for your application.
 
+<<<<<<< HEAD
 8. Click **Create a load-balancing set** if this endpoint will be the first one in a load-balanced set. Then, on the **Configure the load-balanced set** page, specify a name, protocol, and probe details. Load-balanced sets require a probe so the health of the set can be monitored. For more information, see [Load Balancing Virtual Machines](http://www.windowsazure.com/en-us/manage/windows/common-tasks/how-to-load-balance-virtual-machines/).  
+=======
+If the virtual machine is in an Azure virtual network, you should use Network Security Groups instead. For more information, see [About Network Security Groups](https://msdn.microsoft.com/library/azure/dn848316.aspx).
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 9.	Click the check mark to create the endpoint.
 
@@ -75,7 +79,11 @@ The Access Control List (ACL) on a network endpoint can restrict traffic based u
 
 3. Click **Endpoints**. The Endpoints page lists all endpoints for the virtual machine.
 
+<<<<<<< HEAD
     ![ACL list](./media/virtual-machines-set-up-endpoints/EndpointsShowsDefaultEndpointsForVM.png)
+=======
+[Load Balancing Virtual Machines](http://www.windowsazure.com/manage/windows/common-tasks/how-to-load-balance-virtual-machines/)
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 4. Select the appropriate endpoint from the list. 
 

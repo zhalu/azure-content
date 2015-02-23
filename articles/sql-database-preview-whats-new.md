@@ -13,12 +13,26 @@
 	ms.tgt_pltfrm="na" 
 	ms.devlang="na" 
 	ms.topic="article" 
+<<<<<<< HEAD
 	ms.date="01/29/2015" 
+=======
+	ms.date="02/17/2015" 
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 	ms.author="genemi"/>
 
 
 # What's new in the Latest SQL Database Update V12 (preview)
 
+<<<<<<< HEAD
+=======
+<!--
+GeneMi , 2015-Feb-17  11:50am
+DacFx import export update.
+Dynamic Data Masking, added Wednesday 2015/Feb/18.
+GA-per-Regions table updates.
+Clarify V11 db remains available during upgrade to V12.
+-->
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 The latest Azure SQL Database Update V12 (preview) provides nearly complete compatibility with the Microsoft SQL Server engine. The preview brings more Premium performance to customers. These enhancements help to streamline SQL Server application migrations to Azure, and help customers who have heavier database workloads. 
 
@@ -60,10 +74,10 @@ This section names and explains the new features in each category.
 | :--- | :--- |
 | . | ***December 2014:*** |
 | Table partitioning | Previous limitations on [table partitioning](http://msdn.microsoft.com/library/ms190787.aspx) are eliminated. |
-| Larger transactions | <p>With the V12 preview you are no longer limited to a maximum of 2 GB of data modifications in a single transaction.</p> <p>One benefit is that rebuilding a large index is no longer limited by 2 GB transaction size limit.</p> For general information, see [Azure SQL Database Resource Limits](http://msdn.microsoft.com/library/azure/dn338081.aspx). |
-| Online index build and rebuild | <p>Before the V12 preview, Azure SQL Database generally supported the (ONLINE=ON) clause of the ALTER INDEX statement, but this was not supported for indexes on a BLOB type column. Now the V12 preview does support (ONLINE=ON) even for indexes on BLOB columns.</p> <p>The ONLINE feature enables queries to benefit from an index even while the index is being rebuilt.</p> |
+| Larger transactions | With the V12 preview you are no longer limited to a maximum of 2 GB of data modifications in a single transaction. <br/><br/> One benefit is that rebuilding a large index is no longer limited by 2 GB transaction size limit. For general information, see [Azure SQL Database Resource Limits](http://msdn.microsoft.com/library/azure/dn338081.aspx). |
+| Online index build and rebuild | Before the V12 preview, Azure SQL Database generally supported the (ONLINE=ON) clause of the ALTER INDEX statement, but this was not supported for indexes on a BLOB type column. Now the V12 preview does support (ONLINE=ON) even for indexes on BLOB columns.<br/><br/> The ONLINE feature enables queries to benefit from an index even while the index is being rebuilt. |
 | CHECKPOINT support | With the V12 preview you can issue the T-SQL CHECKPOINT statement for your database. |
-| More options on ALTER DATABASE | The V12 preview supports more of the options that are available on the ALTER DATABASE statement. <p> </p> For more information, see [ALTER DATABASE (Transact-SQL)](http://msdn.microsoft.com/library/ms174269.aspx) or [Azure SQL Database Transact-SQL Reference](http://msdn.microsoft.com/library/azure/ee336281.aspx). |
+| More options on ALTER DATABASE | The V12 preview supports more of the options that are available on the ALTER DATABASE statement. <br/><br/> For more information, see [ALTER DATABASE (Transact-SQL)](http://msdn.microsoft.com/library/ms174269.aspx) or [Azure SQL Database Transact-SQL Reference](http://msdn.microsoft.com/library/azure/ee336281.aspx). |
 | More DBCC commands | Several more DBCC commands are now available in the V12 preview. For details see [Azure SQL Database Transact-SQL Reference](http://msdn.microsoft.com/library/azure/ee336281.aspx). |
 
 
@@ -72,14 +86,16 @@ This section names and explains the new features in each category.
 
 | Feature | Description |
 | :--- | :--- |
+| . | ***February 2015:*** |
+| Dynamic data masking preview | When a rowset is generated from a query, an established data masking policy can replace parts of the data with 'X' characters to overlay and protect sensitive information. After the masking operation completes, the modified rowset is sent to the client.<br/><br/>One example use might be to mask all but the last few digits of a credit card number.<br/><br/>**NOTE:** This feature is at the preview status, and has not yet been announced for general availability for production use.<br/><br/>For detailed information, see [Get started with Azure SQL Database Dynamic Data Masking](http://azure.microsoft.com/documentation/articles/sql-database-dynamic-data-masking-get-started/). |
 | . | ***January 2015:*** |
 | Row-level security (RLS) preview | **Caution:** The RLS feature is presently at *preview* status only, even in geographic regions where V12 is in general availability (GA) status. Until RLS is in GA status, RLS is not yet appropriate for use in a business critical production database.<br/><br/>The new CREATE SECURITY POLICY statement in T-SQL enables you to implement RLS. RLS causes the database server to add conditions which filter out some data rows before a rowset is returned to the caller.<br/><br/>In the industry, RLS is sometimes also called fine-grained access control.<br/><br/>For a code example and more, see [Row-Level Security Preview](http://msdn.microsoft.com/library/7221fa4e-ca4a-4d5c-9f93-1b8a4af7b9e8.aspx). |
 | . | ***December 2014:*** |
-| Window functions in T-SQL queries | The ANSI window functions are access with the [OVER clause](http://msdn.microsoft.com/library/ms189461.aspx). <p></p> Itzik Ben-Gan has an excellent [blog post](http://sqlmag.com/sql-server-2012/how-use-microsoft-sql-server-2012s-window-functions-part-1) that further explains window functions and the OVER clause. |
-| .NET CLR integration | The CLR (common language runtime) of the .NET Framework is integrated into the V12 preview. <p></p> Only SAFE assemblies that are fully compiled to binary code are supported. For details see [CLR Integration Programming Model Restrictions](http://msdn.microsoft.com/library/ms403273.aspx). <p></p> You can find information about this feature in the following topics: <br/> * [Introduction to SQL Server CLR Integration](http://msdn.microsoft.com/library/ms254498.aspx) <br/> * [CREATE ASSEMBLY (Transact-SQL)](http://msdn.microsoft.com/library/ms189524.aspx). |
-| Change tracking for data | Change tracking for data can now be configured at the database or table level. <p></p> For information about change tracking, see [About Change Tracking (SQL Server)](http://msdn.microsoft.com/library/bb933875.aspx). |
-| XML indexes | The V12 preview enables you use the T-SQL statements CREATE XML INDEX and CREATE SELECTIVE XML INDEX. <p></p> Information about XML indexes is available at: <br/> * [CREATE XML INDEX (Transact-SQL)](http://msdn.microsoft.com/library/bb934097.aspx) <br/> * [Create, Alter, and Drop Selective XML Indexes](http://msdn.microsoft.com/library/jj670109.aspx) |
-| Table as a heap | The V12 preview enables you to create a table that has no clustered index. <p></p> This feature is especially helpful for its support of the T-SQL SELECT...INTO statement which creates a table from a query result. |
+| Window functions in T-SQL queries | The ANSI window functions are access with the [OVER clause](http://msdn.microsoft.com/library/ms189461.aspx). <br/><br/> Itzik Ben-Gan has an excellent [blog post](http://sqlmag.com/sql-server-2012/how-use-microsoft-sql-server-2012s-window-functions-part-1) that further explains window functions and the OVER clause. |
+| .NET CLR integration | The CLR (common language runtime) of the .NET Framework is integrated into the V12 preview. <br/><br/> Only SAFE assemblies that are fully compiled to binary code are supported. For details see [CLR Integration Programming Model Restrictions](http://msdn.microsoft.com/library/ms403273.aspx). <br/><br/> You can find information about this feature in the following topics: <br/> * [Introduction to SQL Server CLR Integration](http://msdn.microsoft.com/library/ms254498.aspx) <br/> * [CREATE ASSEMBLY (Transact-SQL)](http://msdn.microsoft.com/library/ms189524.aspx). |
+| Change tracking for data | Change tracking for data can now be configured at the database or table level. <br/><br/> For information about change tracking, see [About Change Tracking (SQL Server)](http://msdn.microsoft.com/library/bb933875.aspx). |
+| XML indexes | The V12 preview enables you use the T-SQL statements CREATE XML INDEX and CREATE SELECTIVE XML INDEX. <br/><br/> Information about XML indexes is available at: <br/> * [CREATE XML INDEX (Transact-SQL)](http://msdn.microsoft.com/library/bb934097.aspx) <br/> * [Create, Alter, and Drop Selective XML Indexes](http://msdn.microsoft.com/library/jj670109.aspx) |
+| Table as a heap | The V12 preview enables you to create a table that has no clustered index. <br/><br/> This feature is especially helpful for its support of the T-SQL SELECT...INTO statement which creates a table from a query result. |
 | Application roles | For security and permissions control, the V12 preview enables you to issue GRANT - DENY - REMOVE statements against [application roles](http://msdn.microsoft.com/library/ms190998.aspx). |
 
 
@@ -98,7 +114,7 @@ B. "Change tracking" - as a feature name appears in two different rows in differ
 | :--- | :--- |
 | . | ***December 2014:*** |
 | DMVs (dynamic management views) | Several DMVs are added in the V12 preview. For details see [Azure SQL Database Transact-SQL Reference](http://msdn.microsoft.com/library/azure/ee336281.aspx). |
-| Change tracking | The V12 preview fully supports change tracking. <p></p> For details of this feature see [Enable and Disable Change Tracking (SQL Server)](http://msdn.microsoft.com/library/bb964713.aspx). |
+| Change tracking | The V12 preview fully supports change tracking. <br/><br/> For details of this feature see [Enable and Disable Change Tracking (SQL Server)](http://msdn.microsoft.com/library/bb964713.aspx). |
 
 
 ### 1.4 Performance improvements at the Premium service tier
