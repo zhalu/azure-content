@@ -62,7 +62,7 @@ If you have multiple Microsoft IDs you can use any of them or create a new Micro
 You now have a Windows Azure Marketplace (WAM) account and can browse, subscribe to, and consume the Marketplace services. 
 
 ###Next Steps
-Learn to update your account information, and add, rename, and delete account keys as you [Manage Your Marketplace Account](/marketplace-data-market-manage-your-marketplace-account.md).
+Learn to update your account information, and add, rename, and delete account keys as you [Manage Your Marketplace Account](./marketplace-data-market-manage-your-marketplace-account.md).
 
 ###See Also
 ####Tasks
