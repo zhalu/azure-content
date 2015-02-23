@@ -91,8 +91,8 @@ If you own and want to publish data or a application or service, the Marketplace
 ####Developer topic links
 - [Query Marketplace Datasets from your App](./marketplace-data-market-query-marketplace-datasets-from-your-app.md)
 - [Authenticate in your Marketplace App](./marketplace-data-market-authenticate-in-your-marketplace-app.md)
-- [Retrieve a User's Subscription Info](./marketplace-data-market-retrieve-a-users-subscription-info.md)
-- [Distribute Your Application through the Marketplace](./marketplace-data-market-distribute-your-application-through-the-marketplace.md)
+- [Retrieve a User's Subscription Info](./marketplace-data-market-retrieve-user-subscription-info.md)
+- [Distribute Your Application through the Marketplace](./marketplace-data-market-distribute-your-app.md)
 
 
 ###Topics for everyone
