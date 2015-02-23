@@ -33,7 +33,7 @@ Which you use depends on the expected use of your application.
 
 [Implement OAuth in your Marketplace App ](./marketplace-data-market-implement-oath-in-marketplace-app.md)
 
-[Implement HTTP Basic Auth in your Marketplace App](.marketplace-data-market-implement-http-basic-auth-in-marketplace-app.md)
+[Implement HTTP Basic Auth in your Marketplace App](./marketplace-data-market-implement-http-basic-auth-in-marketplace-app.md)
 
 
 <table>
