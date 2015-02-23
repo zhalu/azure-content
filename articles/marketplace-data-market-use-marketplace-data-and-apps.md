@@ -28,13 +28,13 @@ The Marketplace allows you to create and manage your account, find, preview, and
 
 
 ###Sections in This Topic
-[Create Your Marketplace Account](/marketplace-data-market-Create-Your-Marketplace-Account.md) <br>
-[Manage Your Marketplace Account](/marketplace-data-market-Manage-Your-Marketplace-Account.md)<br>
-[Subscribe to a Marketplace Offering](/marketplace-data-market-Subscribe-to-a-Marketplace-Offering.md)<br>
-[Explore a Dataset with Service Explorer](/marketplace-data-market-Explore-a-Dataset-with-Service-Explorer.md)<br>
-[Import Marketplace data into PowerPivot](/marketplace-data-market-Import-Marketplace-data-into-PowerPivot.md)<br>
-[Import Marketplace data into Power Query for Excel](/marketplace-data-market-Import-Marketplace-data-into-Power-Query-for-Excel.md)<br>
-[Import Marketplace data into Excel](/marketplace-data-market-Import-Marketplace-data-into-Excel.md)<br>
+[Create Your Marketplace Account](./marketplace-data-market-create-your-marketplace-account.md) <br>
+[Manage Your Marketplace Account](./marketplace-data-market-manage-your-marketplace-account.md)<br>
+[Subscribe to a Marketplace Offering](./marketplace-data-market-subscribe-to-a-marketplace-offering.md)<br>
+[Explore a Dataset with Service Explorer](./marketplace-data-market-explore-a-dataset-with-service-explorer.md)<br>
+[Import Marketplace data into PowerPivot](./marketplace-data-market-import-marketplace-data-into-powerpivot.md)<br>
+[Import Marketplace data into Power Query for Excel](./marketplace-data-market-import-marketplace-data-into-power-query-for-excel.md)<br>
+[Import Marketplace data into Excel](./marketplace-data-market-import-marketplace-data-into-excel.md)<br>
 
 
 <table>
