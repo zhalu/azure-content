@@ -305,7 +305,7 @@ You do not need to click **Save & Close** when you move from one page to another
 ##See Also
 
 ###Concepts <br>
-Publishing Overview<br>
+Publishing Overview<br> 
 Register as a Publisher<br>
 Provide payment info<br>
 Create promotional discounts<br>
