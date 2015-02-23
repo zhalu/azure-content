@@ -40,21 +40,21 @@ This section covers these three topics.
 <table>
   <tr>
 <td>Topic</td><td>Description</td>
-</tr>
+</tr><tr>
 
 <td> Register your Marketplace Application
 </td><td>Details how to register your application with the Marketplace.
-.</td>
-</tr>
+</td>
+</tr><tr>
 
 <td>Test Your Marketplace Application
 </td><td>Describes how to test your application in a safe environment.
-.</td>
-</tr>
+</td>
+</tr><tr>
 
 <td>Deploy your Marketplace Application
    </td><td>Describes how to deploy your application to Azure.
-.</td>
+</td></tr>
 
 </table>
 
