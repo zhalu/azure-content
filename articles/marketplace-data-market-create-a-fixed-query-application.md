@@ -32,10 +32,10 @@ Before you proceed make sure you have:
 * A valid Windows Live ID account. If you do not have a Live ID go to the [Windows Live home page](http://go.microsoft.com/fwlink/?linkid=202643) and sign up.
 
 
-* A valid Marketplace account. If you do not have a Marketplace go to the topic [Create Your Marketplace Account](./marketplace-data-market-Create-your-Marketplace-Account.md) and follow the instructions there.
+* A valid Marketplace account. If you do not have a Marketplace go to the topic [Create Your Marketplace Account](./marketplace-data-market-create-your-marketplace-account.md) and follow the instructions there.
 
 
-* A subscription to the Marketplace flexible query dataset you want to use in your application. If you have not subscribed to a fixed query dataset go to [Subscribe to a Data Offer](./marketplace-data-market-Subscribe-to-a-Data-Offer.md) and follow the instructions there.
+* A subscription to the Marketplace flexible query dataset you want to use in your application. If you have not subscribed to a fixed query dataset go to [Subscribe to a Data Offer](./marketplace-data-market-subscribe-to-a-data-offer.md) and follow the instructions there.
 
 
 ###Sections in this Topic
@@ -53,7 +53,7 @@ Before you proceed make sure you have:
   <tr>
 <td>Step 3: Add System.Data.Services.Client
 </td><td>Add a reference to System.Data.Services.Client to your project.
-.</td>
+</td>
 </tr>
   <tr>
 <td>Step 4: Consume Data with Managed Code</td><td>Code you write to consume a Marketplace fixed query dataset.</td>
@@ -105,7 +105,7 @@ After starting Visual Studio as an administrator and creating a new console appl
 
 
 
-![alt text](./marketplace-data-market-create-a-fixed-query-application/csharpcclasslibrary.jpg)
+![](./media/marketplace-data-market-create-a-fixed-query-application/csharpcclasslibrary.jpg)
 
 	**Figure 1 – Download the .NET C# Class Library**	
 
@@ -206,11 +206,11 @@ The following code defines a simple Console Application that uses the **CensusDe
 **C.** Add a constructor for the CensusDemographicData class. <br> 
 The constructor initializes both private variables and the user credentials. 
  <br>
-The ROOT_SERVICE_URL is the Service Root URL. (See [Get the Service Root URL](marketplace-data-market-Create-a-Flexible-Query-Application.md) for how to find the Service Root URL.)<br>
+The ROOT_SERVICE_URL is the Service Root URL. (See [Get the Service Root URL](./marketplace-data-market-create-a-flexible-query-application.md) for how to find the Service Root URL.)<br>
 The *context* is the service container which is used for user credentials. <br>
 The *IgnoreMissingProperties* property is set to true to make the client robust to properties being added to the type on the server. (See [MSDN documentation](http://msdn.microsoft.com/en-us/library/system.data.services.client.dataservicecontext.ignoremissingproperties.aspx) for additional information.)<br>
 The *USER_ID* is your Live ID.<br>
-The *SECURE_ACCOUNT_KEY* is the Marketplace account key you’re using for this application. (See [Manage Your Marketplace Account](./marketplace-data-market-Manage-Your-Marketplace-Account.md).)
+The *SECURE_ACCOUNT_KEY* is the Marketplace account key you’re using for this application. (See [Manage Your Marketplace Account](./marketplace-data-market-manage-your-marketplace-account.md).)
 
 **C#**
 
@@ -568,7 +568,7 @@ A variable to instantiate your class.
 The dataset’s metadata informs intellisense as you write your code. If your IDE does not support intellisense or intellisense fails to work you can get the metadata from the service.
 
 1. Get the dataset’s service root URI. 
-See the section [Get the Service Root URL](marketplace-data-market-Create-a-Flexible-Query-Application.md) for instructions on how to get the service root URI.
+See the section [Get the Service Root URL](./marketplace-data-market-create-a-flexible-query-application.md) for instructions on how to get the service root URI.
 
 2. Add /$*metadata* to the end of your service root URL. 
 For example, if your service root URL is *https://datamarket.azure.com/Data.ashx/fabrikam.com/inventory* the metadata URL is *https://datamarket.azure.com/Data.ashx/fabrikam.com/inventory/$metadata*.
