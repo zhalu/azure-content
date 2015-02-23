@@ -124,7 +124,7 @@ Auto-refill is implemented from the **My Data** page after you subscribe to an o
 4. Locate the offering where you want to enable Auto-refill.
 
 5. Click **Enable Auto-refill**. (Figure 1.2) <br>
-Subscriptions where Auto-refill is not enabled always show zero refills available. (Figure 1.1) <br>![alt text](./media/marketplace-data-market-use-auto-refill-to-avoid-service-lapses/enableautorefill.png)
+Subscriptions where Auto-refill is not enabled always show zero refills available. (Figure 1.1) <br>![](./media/marketplace-data-market-use-auto-refill-to-avoid-service-lapses/enableautorefill.png)
 6. A new window opens from which you can enable Auto-refill. (Figure 2)
 
 7. If you want to limit the number of refills in a 30 day period, select **Limited**: then enter the maximum number of refills in any 30 day period. 
@@ -136,7 +136,7 @@ If you do not want to limit the number of refills in a 30 day period, select **U
 <br>To undo these changes, click **Cancel**. (Figure 2.3)
 <br><br>You then return to your **My Account** page, where your subscription shows the number of Auto-refills remaining since the last Auto-refill occurred and a link to **Edit Auto-refill**, indicating that Auto-refill is enabled. (Figure 3.1). 
 
-![alt text](./media/marketplace-data-market-use-auto-refill-to-avoid-service-lapses/enableautorefilldialog.png)
+![](./media/marketplace-data-market-use-auto-refill-to-avoid-service-lapses/enableautorefilldialog.png)
 
 
 ###How do I update my Auto-refill options?
@@ -150,7 +150,7 @@ If you do not want to limit the number of refills in a 30 day period, select **U
 4. Locate the offering where you want to edit your Auto-refill parameters.
 
 5. Click **Edit Auto-refill**. (Figure 3.2) 
-<br>![alt text](./media/marketplace-data-market-use-auto-refill-to-avoid-service-lapses/editautorefill.png)
+<br>![](./media/marketplace-data-market-use-auto-refill-to-avoid-service-lapses/editautorefill.png)
 6. In the **Windows Azure Marketplace (WAM) “Auto-Refill”** window (Figure 2), make the changes you want.
 
 7. Select the **By checking this box,…** checkbox.
@@ -177,7 +177,7 @@ To disable Auto-refill on a subscription:
 7. Select the **By checking this box,…** checkbox.
 
 8. To disable Auto-refill, click **Submit**. <br>To cancel the changes and keep Auto-refill as it was, and return to the **My Account** page, click **Cancel**. <br>
-![alt text](./media/marketplace-data-market-use-auto-refill-to-avoid-service-lapses/cancelautorefill.png)
+![](./media/marketplace-data-market-use-auto-refill-to-avoid-service-lapses/cancelautorefill.png)
  -----------
 ##See Also
 
