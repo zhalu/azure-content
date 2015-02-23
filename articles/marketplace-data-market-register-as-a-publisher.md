@@ -57,7 +57,7 @@ The logo dimensions must be between 200x150 pixels and 400x300 pixels. .PNG form
 
 **v**.  After adding the information to the form click **Register**. (Figure 1)
 
-![alt text](./marketplace-data-market-register-as-a-publisher/windowsazure.png)
+![](./media/marketplace-data-market-register-as-a-publisher/windowsazure.png)
 
 Figure 1
 
@@ -66,7 +66,7 @@ Figure 1
 
 If you agree to the terms of the agreement check the **I have read and agree with the Azure Marketplace agreement** checkbox and click the **I Agree** button. (Figure 2) 
 
-![alt text](./marketplace-data-market-register-as-a-publisher/azureagreement.png)
+![](./media/marketplace-data-market-register-as-a-publisher/azureagreement.png)
 
 Figure 2
 
