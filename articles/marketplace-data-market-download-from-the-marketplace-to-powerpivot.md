@@ -55,12 +55,12 @@ If you cannot find a dataset of interest among your subscriptions, click the Mar
 
 4. Click **Apply**. (Figure 1.3)
 
-![alt text](./media/marketplace-data-market-download-from-the-marketplace-to-powerpivot/querythedataset.png)
+![](./media/marketplace-data-market-download-from-the-marketplace-to-powerpivot/querythedataset.png)
 
 ####Download the data to PowerPivot
 
 1. From the list of **Download Options**, select **PowerPivot 2010**. (Figure 2).
-<br>![alt text](./media/marketplace-data-market-download-from-the-marketplace-to-powerpivot/downloadoptionspp.png)
+<br>![](./media/marketplace-data-market-download-from-the-marketplace-to-powerpivot/downloadoptionspp.png)
 
 2. When prompted, click **Open**.
 
@@ -76,7 +76,7 @@ If you need to find your account key, click **Find**, then copy the account key 
 7. Click **Finish** to import your data. 
 
 8. After the data is completed, click **Close**. 
-You can analyze the data using PowerPivot. For information on using PowerPivot see the videos at the [PowerPivot download page](http://www.microsoft.com/en-us/server-cloud/solutions/business-intelligence/default.aspx), or search for “PowerPivot training” on [Bing.com](www.bing.com).
+You can analyze the data using PowerPivot. For information on using PowerPivot see the videos at the [PowerPivot download page](http://www.microsoft.com/en-us/server-cloud/solutions/business-intelligence/default.aspx), or search for “PowerPivot training” on [Bing.com](http://www.bing.com).
 
 
 ##See Also
