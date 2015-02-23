@@ -18,9 +18,13 @@ Follow these steps to create a new mobile service.
 
 	![](./media/mobile-services-dotnet-backend-create-new-service/mobile-create-page1.png)
 
+<<<<<<< HEAD
    	This displays the **Specify database settings** page.
 
 	> [AZURE.NOTE] As part of this tutorial, you create a new SQL Database instance and server. You can reuse this new database and administer it as you would any other SQL Database instance. If you already have a database in the same region as the new mobile service, you can instead choose **Use existing Database** and then select that database. The use of a database in a different region is not recommended because of additional bandwidth costs and higher latencies.	
+=======
+This displays the **Specify database settings** page.
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 6.	In **Name**, type the name of the new database, then type **Login name**, which is the administrator login name for the new SQL Database server, type and confirm the password, and click the check button to complete the process.
 

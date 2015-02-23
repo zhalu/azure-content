@@ -20,7 +20,11 @@
 #How to: Encode an Asset
 This article is one in a series introducing Azure Media Services programming. The previous topic was [How to: Get a Media Processor](../media-services-get-media-processor/).
 
+<<<<<<< HEAD
 For media content on the server, you can encode the content with a number of media encodings and formats using Azure Media Encoder. You can also use an encoder provided by a Media Services partner; third-party encoders are available through the [Azure Marketplace][]. You can specify the details of encoding tasks by using [Encoder Preset][] strings, or by using configuration files. 
+=======
+This article is part of the [Media Services Video on Demand workflow](../media-services-video-on-demand-workflow) series. 
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 ##Encoding to MP4 adaptive bitrate set
 It is recommended to encode your to mezzanine file to MP4 adaptive bitrate sets and then use Dynamic packaging to deliver your content. For more information, see [Creating an Encoding Job with the Media Services SDK for .NET](http://msdn.microsoft.com/en-us/library/azure/dn282273.aspx), [Dynamic packaging](http://msdn.microsoft.com/en-us/library/azure/jj889436.aspx), and [Delivering Content](http://msdn.microsoft.com/en-us/library/azure/hh973618.aspx).

@@ -23,7 +23,12 @@
 
 - [File names and locations for Azure technical articles](./file-names-and-locations.md)
 
+<<<<<<< HEAD
 - [Linking guidelines](./create-links-markdown.md )
+=======
+- [Linking guidelines](./create-links-markdown.md/)
+
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 
 ##Authoring articles: markdown

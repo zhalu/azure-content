@@ -185,12 +185,17 @@ The final experiment should look like this:
 
 Now that you have your experiment set up, you can iterate to try to improve the model. For instance, you can change the features you use in your prediction. Or you can modify the properties of the **Linear Regression** algorithm or try a different algorithm altogether. You can even add multiple algorithms to your experiment at one time and compare two by using the **Evaluate Model** module. 
 
-> [AZURE.TIP] Use the **SAVE AS** button under the experiment canvas to copy any iteration of your experiment. You can see all the iterations of your experiment by clicking **VIEW RUN HISTORY** under the canvas. See the Machine Learning Studio Help topic **Viewing Run History** for more details.
+> [AZURE.TIP] Use the **SAVE AS** button under the experiment canvas to copy any iteration of your experiment. You can see all the iterations of your experiment by clicking **VIEW RUN HISTORY** under the canvas. See [Manage experiment iterations in Azure Machine Learning Studio][runhistory] for more details.
 
-When you're satisfied with your model, you can publish it as a web service to be used to predict automobile prices by using new data. See the Machine Learning Studio Help topic **Publishing Experiments** for more details.
+[runhistory]: ../machine-learning-manage-experiment-iterations/
 
-For a more extensive and detailed walkthrough for creating, training, scoring, and publishing a predictive model, see [Walkthrough: Develop a predictive solution with Azure Machine Learning](http://azure.microsoft.com/en-us/documentation/articles/machine-learning-walkthrough-develop-predictive-solution/). 
+When you're satisfied with your model, you can publish it as a web service to be used to predict automobile prices by using new data. See [Publish an Azure Machine Learning web service][publish] for more details.
 
+[publish]: ../machine-learning-publish-a-machine-learning-web-service/
+
+For a more extensive and detailed walkthrough for creating, training, scoring, and publishing a predictive model, see [Develop a predictive solution by using Azure Machine Learning ][walkthrough]. 
+
+[walkthrough]: ../machine-learning-walkthrough-develop-predictive-solution/
 
 <!-- Images -->
 [screen1]:./media/machine-learning-create-experiment/screen1.png

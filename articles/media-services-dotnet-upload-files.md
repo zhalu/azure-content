@@ -20,8 +20,12 @@
 
 #Upload Files into a Media Services account using .NET
 
+<<<<<<< HEAD
 This article is part of the series that introduces Media Services Video on Demand workflow. The previous topic was [Connecting to Media Services using .NET SDK](../media-services-dotnet-connect_programmatically/).
 
+=======
+This article is part of the [Media Services Video on Demand workflow](../media-services-video-on-demand-workflow) series. 
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 In Media Services, you upload (or ingest) your digital files into an asset. The **Asset** entity can contain video, audio, images, thumbnail collections, text tracks and closed caption files (and the metadata about these files.)  Once the files are uploaded, your content is stored securely in the cloud for further processing and streaming.
 

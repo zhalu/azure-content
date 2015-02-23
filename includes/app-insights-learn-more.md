@@ -35,6 +35,7 @@ Processing
 Problems? Questions?
 
 <ul>
+<li><a href="../app-insights-platforms/">Can I use Application Insights with...?</a></li>
 <li><a href="../app-insights-troubleshoot-faq/">Q & A and troubleshooting</a>
 </li>
 </ul>
@@ -44,6 +45,8 @@ Problems? Questions?
 Device apps
 <ul>
 <li><a href="../app-insights-windows-monitor-usage-crashes/">Monitor usage and crashes in Windows device apps</a>
+</li>
+<li><a href="../app-insights-windows-desktop/">Monitor Windows desktop apps</a>
 </li>
 </ul>
 
@@ -118,4 +121,11 @@ Web sites and web applications
 [detect]: ../app-insights-detect-triage-diagnose/
 [java]: ../app-insights-java-get-started/
 [javalogs]: ../app-insights-java-trace-logs/
+<<<<<<< HEAD
 
+=======
+[windows]: ../app-insights-windows-get-started/
+[windowsUsage]: ../app-insights-windows-usage/
+[windowsCrash]: ../app-insights-windows-crashes/
+[platforms]: ../app-insights-platforms/
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4

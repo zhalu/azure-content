@@ -17,6 +17,12 @@
 	ms.author="juliako"/>
 
 
+<<<<<<< HEAD
+=======
+#How to: Get a Media Processor Instance
+
+This article is part of the [Media Services Video on Demand workflow](../media-services-video-on-demand-workflow) series. 
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 
 

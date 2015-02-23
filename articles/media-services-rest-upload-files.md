@@ -20,7 +20,12 @@
 
 #Upload Files into a Media Services account using REST API
 
+<<<<<<< HEAD
 This article is part of the series that introduces Media Services Video on Demand workflow. The previous topic was [Connecting to Media Services using REST API](../media-services-rest-connect_programmatically/).
+=======
+This article is part of the [Media Services Video on Demand workflow](../media-services-video-on-demand-workflow) series. 
+
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 >[AZURE.NOTE] When working with the Media Services REST API, the following considerations apply:
 >

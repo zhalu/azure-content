@@ -16,12 +16,18 @@
 	ms.date="10/30/2014" 
 	ms.author="juliako"/>
 
+<<<<<<< HEAD
 
 
 
 
 <h1>How to: Check Job Progress</h1>
 This article is one in a series introducing Azure Media Services programming. The previous topic was [How to: Encode an Asset](http://go.microsoft.com/fwlink/?LinkID=301753&clcid=0x409).
+=======
+#How to: Check Job Progress
+
+This article is part of the [Media Services Video on Demand workflow](../media-services-video-on-demand-workflow) series. 
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 When you run jobs, you often require a way to track job progress. The following code example defines the StateChanged event handler. This event handler tracks job progress and provides updated status, depending on the state. The code also defines the LogJobStop method. This helper method logs error details.
 

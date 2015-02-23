@@ -11,11 +11,16 @@
 <tags 
 	ms.service="mobile-services" 
 	ms.workload="mobile" 
-	ms.tgt_pltfrm="" 
-	ms.devlang="Java" 
+	ms.tgt_pltfrm="mobile-android" 
+	ms.devlang="java" 
 	ms.topic="article" 
+<<<<<<< HEAD
 	ms.date="09/27/2014" 
 	ms.author="glenga"/>
+=======
+	ms.date="02/16/2015" 
+	ms.author="ricksal,glenga"/>
+>>>>>>> 440cd6ceb9ad667ae1c98784b7b3fe20f52a31f4
 
 # Call a custom API from the client
 
@@ -25,11 +30,7 @@ This topic shows you how to call a custom API from an Android app. A custom API 
 
 The custom API created in this topic enables you to send a single POST request that sets the *completed* flag to `true` for all the todo items in your mobile service's table. Without this custom API, the client would have to send individual requests to update the flag for each todo item in the table.
 
-You will add this functionality to the app that you created when you completed either the [Get started with Mobile Services] or the [Get started with data] tutorial. To do this, you will complete the following steps:
-
-1. [Define the custom API]
-2. [Update the app to call the custom API]
-3. [Test the app] 
+You will add this functionality to the app that you created when you completed either the [Get started with Mobile Services] or the [Get started with data] tutorial. 
 
 This tutorial is based on the Mobile Services quickstart. Before you start this tutorial, you must first complete [Get started with Mobile Services]. 
 
