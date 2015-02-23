@@ -41,14 +41,14 @@ Which you use depends on the expected use of your application.
 <td>Link</td><td>Description</td>
 </tr>
 
-<td> Select an Authentication Protocol
+<tr><td> Select an Authentication Protocol
 </td><td>Determine which Marketplace supported authentication protocol best fits your program needs.</td>
 </tr>
 
-<td>Implement OAuth in your Marketplace App</td><td>OAuth permits your application to be widely distributed and used with each user paying for their own use.</td>
+<tr><td>Implement OAuth in your Marketplace App</td><td>OAuth permits your application to be widely distributed and used with each user paying for their own use.</td>
 </tr>
 
-<td>Implement HTTP Basic Auth in your Marketplace App   </td><td>HTTP Basic Authentication should be used only under specific application conditions. This article explains which uses are reasonable for HTTP Basic Authentication and how to implement it in your application. <br /><br />
+<tr><td>Implement HTTP Basic Auth in your Marketplace App   </td><td>HTTP Basic Authentication should be used only under specific application conditions. This article explains which uses are reasonable for HTTP Basic Authentication and how to implement it in your application. <br /><br />
 
 
 
@@ -61,7 +61,7 @@ Use HTTP Basic Authentication only if:
 * It is safe to hard-code (and thus potentially expose) your account key in the application, and<br /><br />
 * It is acceptable that all access to the Marketplace datasets be charged to your account, and <br /><br />
 * You will not need to remove access from some users while not affecting access of others, or <br /><br />
-* If you will require each user to enter their own ID and private Marketplace account key, such as KufDkfLk39-xMwqFGCvDFq3-6rXcvGF+Wxc73z1hhJ whenever they attempt to access a dataset.</td>
+* If you will require each user to enter their own ID and private Marketplace account key, such as KufDkfLk39-xMwqFGCvDFq3-6rXcvGF+Wxc73z1hhJ whenever they attempt to access a dataset.</td></tr>
 
 </table>
 
