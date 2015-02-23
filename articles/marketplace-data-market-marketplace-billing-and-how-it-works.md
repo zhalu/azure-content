@@ -57,7 +57,7 @@ Your Subscription Billing Date is the day of the month that you subscribed to a 
 The events shown in Figure 1, Billing Timeline, are described in detail in the following table. In this scenario we walk through a typical customer’s subscriptions, billings and charges to their credit card. 
 
 
-![alt text](./media/marketplace-data-market-marketplace-billing-and-how-it-works/billingtimeline.png)
+![](./media/marketplace-data-market-marketplace-billing-and-how-it-works/billingtimeline.png)
 
 <table>
   <tr>
