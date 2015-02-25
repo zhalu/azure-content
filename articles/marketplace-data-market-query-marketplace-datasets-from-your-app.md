@@ -38,34 +38,33 @@ OData is consistent with the way the Web works. It uses an HTTP-based, uniform i
 
 [Supported OData Query Options  ](./marketplace-data-market-supported-odata-query-options.md)
 
-[JSON Support   ](./marketplace-data-market-json-support.md)
-
+[JSON Support](./marketplace-data-market-json-support.md)
 
 <table>
   <tr>
 <td>Link</td><td>Description</td>
-</tr>
+</tr><tr>
 
 <td> Compare Fixed and Flexible Query Types </td>
 <td>Determine whether you need to use a flexible or fixed query to consume data from your dataset.</td>
-</tr>
+</tr><tr>
 
 <td>Create a Flexible Query Application</td>
 <td>Use Service References in Visual Studio to consume data from datasets that support flexible queries. This topic includes example code.</td>
-</tr>
+</tr><tr>
 
 <td>Create a Fixed Query Application   </td>
-<td>Use downloadable Service Classes to consume data from datasets that support fixed queries. This topic includes example code. </td> </tr>
+<td>Use downloadable Service Classes to consume data from datasets that support fixed queries. This topic includes example code. </td> </tr><tr>
 
 <td>Compare Flexible and Fixed Query Code </td>
 <td>See similarities and differences in code used for flexible and fixed queries side-by-side. </td> </tr>
 
 <td>Supported OData Query Options   </td>
-<td>The Marketplace supports a subset of OData query options. Learn what OData query options are and are not supported. </td> </tr>
+<td>The Marketplace supports a subset of OData query options. Learn what OData query options are and are not supported. </td> </tr><tr>
 
 <td>JSON Support   </td>
 <td>Marketplace enables JSON support for WSPF and JSON/P support for all Marketplace services. </td> </tr>
 
 </table>
 
-If you want to query a dataset without writing code, you can do that from Service Explorer. See the topic [Explore a Dataset with Service Explorer](./marketplace-data-market-Explore-a-Dataset-with-Service-Explorer.md) and its sub-topics for more information.
+If you want to query a dataset without writing code, you can do that from Service Explorer. See the topic [Explore a Dataset with Service Explorer](./marketplace-data-market-explore-a-dataset-with-service-explorer.md) and its sub-topics for more information.

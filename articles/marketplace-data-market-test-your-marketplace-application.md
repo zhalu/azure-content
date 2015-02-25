@@ -29,7 +29,7 @@ This topic covers how to access and use the Windows Azure Marketplace (WAM) dedi
 2. If you do not have an account with the Windows Azure Marketplace (WAM) create one. See for instructions.
 
 3. Register your application on the Developer Applications page. You need to provide Client Id, Application Name, Application Description and Redirect Url (your Authorization Endpoint address). <br>
-See the topic [Register your Marketplace Application](./marketplace-data-market-register-your-marketplace-application) for how to register your application.
+See the topic [Register your Marketplace Application](./marketplace-data-market-register-your-marketplace-application.md) for how to register your application.
 
 4. If your application uses Marketplace data, ensure that you are subscribed to the required data offers.
 

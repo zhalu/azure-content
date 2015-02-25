@@ -35,10 +35,10 @@ Before you proceed make sure you have:
 * A valid Windows Live ID account. If you do not have a Live ID go to the [Windows Live home page](http://go.microsoft.com/fwlink/?linkid=202643) and sign up.
 
 
-* A valid Marketplace account. If you do not have a Marketplace go to the topic [Create Your Marketplace Account](./marketplace-data-market-Create-your-Marketplace-Account.md) and follow the instructions there.
+* A valid Marketplace account. If you do not have a Marketplace go to the topic [Create Your Marketplace Account](./marketplace-data-market-create-your-marketplace-account.md) and follow the instructions there.
 
 
-* A subscription to the Marketplace flexible query dataset you want to use in your application. If you have not subscribed to a flexible query dataset go to [Subscribe to a Data Offer](./marketplace-data-market-Subscribe-to-a-Data-Offer.md) and follow the instructions there.
+* A subscription to the Marketplace flexible query dataset you want to use in your application. If you have not subscribed to a flexible query dataset go to [Subscribe to a Data Offer](./marketplace-data-market-subscribe-to-a-data-offer.md) and follow the instructions there.
 
 
 
@@ -122,7 +122,7 @@ After starting Visual Studio as an administrator and creating a new console appl
 
 7. Find the **Service root URL**.
 
-![alt text](./marketplace-data-market-create-a-flexible-query-application/servicerooturl.jpg)
+![](./media/marketplace-data-market-create-a-flexible-query-application/servicerooturl.jpg)
 
 	**Figure 1 – Service root URL**	
 
@@ -189,7 +189,7 @@ The *SERVICE_ROOT_URL* is the https link you copied to your clipboard above. (Se
 The *context* is the service container which is used for user credentials. <br>
 The *IgnoreMissingProperties* property is set to true to make the client robust to properties being added to the type on the server. (See [MSDN documentation](http://msdn.microsoft.com/en-us/library/system.data.services.client.dataservicecontext.ignoremissingproperties.aspx) for additional information.)<br>
 The *USER_ID* is your Live ID.<br>
-The *SECURE_ACCOUNT_KEY* is the Marketplace account key you’re using for this application. (See [Manage Your Marketplace Account](./marketplace-data-market-Manage-Your-Marketplace-Account.md).)
+The *SECURE_ACCOUNT_KEY* is the Marketplace account key you’re using for this application. (See [Manage Your Marketplace Account](./marketplace-data-market-manage-Your-marketplace-account.md).)
 
 **C#**
 
@@ -304,7 +304,7 @@ This method queries the service and if successful returns the result set as a li
 The query can be any valid Marketplace LINQ query and may optionally include the *where (Where)* filter and/or *orderby (Order By)*. 
 For more information on LINQ queries see [LINQ Query Expressions (C# Programming Guide)](https://msdn.microsoft.com/library/bb397676.aspx) [(LINQ in Visual Basic)](https://msdn.microsoft.com/library/bb385100.aspx). 
 
-For information on LINQ query limitations within the Marketplace see [Supported OData Query Options](./marketplace-data-market-Supported-OData-Query-Options.md).
+For information on LINQ query limitations within the Marketplace see [Supported OData Query Options](./marketplace-data-market-supported-odata-query-options.md).
 
 The following LINQ queries are valid within the Marketplace.
 

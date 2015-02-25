@@ -49,7 +49,7 @@ Before you proceed make sure you have:
 * A valid Marketplace account. If you do not have a Marketplace go to the topic [Create Your Marketplace Account](./marketplace-data-market-create-your-marketplace-account.md) and follow the instructions there.
 
 
-* A subscription to the **Data.gov 2006-2008 Crime in the United States** dataset. If you have not subscribed to this dataset go to [Subscribe to a Data Offer](./marketplace-data-market-Subscribe-to-a-Data-Offer.md) and follow the instructions.
+* A subscription to the **Data.gov 2006-2008 Crime in the United States** dataset. If you have not subscribed to this dataset go to [Subscribe to a Data Offer](./marketplace-data-market-subscribe-to-a-data-offer.md) and follow the instructions.
 
 
 
@@ -60,19 +60,16 @@ Before you proceed make sure you have:
 <td>Section </td><td>Description</td>
 </tr>
 
-<td> URI Examples</td>
+<tr><td> URI Examples</td>
 <td>Examples of flexible query and fixed query URIs.</td>
 </tr>
 
-<td>Determine the Query Type</td>
+<tr><td>Determine the Query Type</td>
 <td>Steps to determine whether a dataset supports flexible or fixed queries.</td>
 </tr>
 
 </table>
- 
 
- 
- 
 ###URI Examples
 
 <table>
@@ -80,11 +77,11 @@ Before you proceed make sure you have:
 <td>URI</td><td>URI Description</td>
 </tr>
 
-<td> https://api.datamarket.azure.com/data.ashx/contoso.com/salesreport/GetSalesReport?region=northamerica </td>
+<tr><td> https://api.datamarket.azure.com/data.ashx/contoso.com/salesreport/GetSalesReport?region=northamerica </td>
 <td>Flexible query to access the Contoso, Ltd. Sales Report data for North America.</td>
 </tr>
 
-<td>https://api.datamarket.azure.com/data.ashx/contoso.com/salesreport/GetSalesReport
+<tr><td>https://api.datamarket.azure.com/data.ashx/contoso.com/salesreport/GetSalesReport
  </td>
 <td>Flexible query to access the Contoso, Ltd. Sales Report data. 
 Since no parameters are specified, the result set is unfiltered and the query returns all Sales Reports in the system.</td>
@@ -118,7 +115,7 @@ The call to GetAccountBalance is the data access method in the downloaded C# ser
 - Important</td>
 </tr>
 
-<td>A flexible query with no parameters returns an unfiltered result set. </br>
+<tr><td>A flexible query with no parameters returns an unfiltered result set. </br>
 A fixed query with the wrong number of parameters (too few or too many) fails. 
 </td>
 </tr>
@@ -141,7 +138,7 @@ Some datasets permit only fixed queries, queries without parameters or with requ
 
 5.  Find the line of text below the service root URL that tells you the query type. This example is for a flexible query.
 
-![alt text](./marketplace-data-market-compare-fixed-and-flexible-query-types/servicerooturl.jpg)
+![alt text](./media/marketplace-data-market-compare-fixed-and-flexible-query-types/servicerooturl.jpg)
 
 **Figure 1 – Query Type**
 

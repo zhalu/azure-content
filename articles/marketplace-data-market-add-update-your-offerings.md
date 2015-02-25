@@ -111,7 +111,7 @@ c) For each table selected, click **Columns** and select the columns from the ta
 d) When finished click any of the other tabs - Contacts, Details, Pricing/Terms, Status/Review, or Save & Close. Your work is saved whenever you leave the Data Source page.
 
 
-![alt text](./marketplace-data-market-add-update-your-offerings/datasource.png)
+![alt text](./media/marketplace-data-market-add-update-your-offerings/datasource.PNG)
 
 ###2) Resource Provider Page (App Service)
 Use the Resource Provider to provide the endpoints for your service in the format:
@@ -125,7 +125,7 @@ a) Enter the Resource Manifest in the text box.
 
 b) When finished click any of the other tabs - Contacts, Details, Plan/Terms, Status/Review, or Save & Close. Your work is saved whenever you leave the Resource Provider page.
 
-![alt text](./marketplace-data-market-add-update-your-offerings/resourceprovider.png)
+![alt text](./media/marketplace-data-market-add-update-your-offerings/resourceprovider.PNG)
 
 ###3) Contacts Page
 The **Contacts** page is where you provide contact information for your customers and Microsoft.
@@ -146,7 +146,7 @@ The **Contacts** page is where you provide contact information for your customer
 
 - Phone Number
 
-![alt text](./marketplace-data-market-add-update-your-offerings/contactspage.png)
+![alt text](./media/marketplace-data-market-add-update-your-offerings/contactspage.PNG)
 
 ###4) Details Page (Data)
 The **Details** page is where you describe your data offering.
@@ -190,7 +190,7 @@ One to four categories that best represent your offering. This is used to help c
 - **Offering Logo**<br>
 The largest .png version of your logo that fits into a space 200 pixels wide by 150 pixels high. 
 
-![alt text](./marketplace-data-market-add-update-your-offerings/datasetdetails.png)
+![alt text](./media/marketplace-data-market-add-update-your-offerings/datasetdetails.PNG)
 
 ###5) Details Page (App Service)
 The **Details** page is where you describe your application service offering.
@@ -222,7 +222,7 @@ One to four categories that best represent your offering.
 - **Logos** <br>
 The largest .png version of your logo that fits into a space 200 pixels wide by 150 pixels high. 
 
-![alt text](./marketplace-data-market-add-update-your-offerings/appservice.png)
+![alt text](./media/marketplace-data-market-add-update-your-offerings/appservice.PNG)
 
 ###6) Pricing/Terms Page (Data)
 Define the pricing, terms, and markets for your offering. Any data offering can have multiple pricing options for the customer to choose from.
@@ -257,7 +257,7 @@ URL to your privacy statement.
 
 To save your entries for a pricing variant, click **Save and Close** before you leave the page or add another variant.
 
-![alt text](./marketplace-data-market-add-update-your-offerings/datasetpricing.png)
+![alt text](./media/marketplace-data-market-add-update-your-offerings/datasetpricing.PNG)
 
 ###7) Plans/Terms Page (App Service)
 Define the pricing, terms, and markets for your offering. Any data offering can have multiple pricing options for the customer to choose from.
@@ -288,12 +288,12 @@ URL to your privacy statement.
 
 To save your entries for a pricing variant, click **Save and Close** before you leave the page or add another variant.
 
-![alt text](./marketplace-data-market-add-update-your-offerings/plansandtermspage.png)
+![alt text](./media/marketplace-data-market-add-update-your-offerings/plansandtermspage.PNG)
 
 ###8) Status/Review Page
 Review all the information you entered for this data offering. If you find any places that need changes, click the appropriate tab for that information then make the changes.
 
-![alt text](./marketplace-data-market-add-update-your-offerings/statusandreview.png)
+![alt text](./media/marketplace-data-market-add-update-your-offerings/statusandreview.PNG)
 
 
 ###9) Save & Close
@@ -305,7 +305,7 @@ You do not need to click **Save & Close** when you move from one page to another
 ##See Also
 
 ###Concepts <br>
-Publishing Overview<br>
+Publishing Overview<br> 
 Register as a Publisher<br>
 Provide payment info<br>
 Create promotional discounts<br>
